@@ -3,90 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover premium curated gadgets and products from The Gadget Hub Store. Your gateway to innovative technology and lifestyle products.">
-    <meta name="keywords" content="gadgets, technology, premium products, electronics, luxury shopping">
+    
+    <!-- SEO Meta Tags -->
+    <title>The Gadget Hub Store — Premium Tech & Lifestyle Marketplace</title>
+    <meta name="description" content="The Gadget Hub Store offers premium gadgets, electronics, fashion accessories, home essentials, and innovative tech products with exclusive deals and fast worldwide shipping.">
+    <meta name="keywords" content="gadgets, electronics, tech store, fashion accessories, home appliances, toys, drones, smart devices, online shopping, premium marketplace">
     <meta name="author" content="The Gadget Hub Store">
-    <meta property="og:title" content="The Gadget Hub Store — Premium Product Showcase">
-    <meta property="og:description" content="Curated collection of luxury gadgets and innovative products">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thegadgethubstore.com">
+    
+    <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="website">
-    <title>The Gadget Hub Store — Premium Product Showcase</title>
+    <meta property="og:title" content="The Gadget Hub Store — Premium Tech & Lifestyle Marketplace">
+    <meta property="og:description" content="Discover premium gadgets, electronics, and lifestyle products with exclusive deals and worldwide shipping.">
+    <meta property="og:url" content="https://thegadgethubstore.com">
+    <meta property="og:site_name" content="The Gadget Hub Store">
+    <meta property="og:image" content="https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000035182_9x16.png">
     
-    <!-- Preconnect to external domains for performance -->
-    <link rel="preconnect" href="https://ae01.alicdn.com">
-    <link rel="dns-prefetch" href="https://ae01.alicdn.com">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Gadget Hub Store — Premium Tech & Lifestyle Marketplace">
+    <meta name="twitter:description" content="Discover premium gadgets, electronics, and lifestyle products with exclusive deals.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000035182_9x16.png">
     
-    <!-- Premium Typography: Inter Font -->
+    <!-- Structured Data Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "The Gadget Hub Store",
+        "description": "Premium tech and lifestyle marketplace offering innovative gadgets, electronics, fashion, and home essentials",
+        "url": "https://thegadgethubstore.com",
+        "logo": "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/logo.png",
+        "priceRange": "$$",
+        "paymentAccepted": "Credit Card, PayPal, AliPay",
+        "currencyAccepted": "PKR, USD"
+    }
+    </script>
+    
+    <!-- Performance Optimization -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://raw.githubusercontent.com">
+    <link rel="dns-prefetch" href="https://tr.ee">
+    
+    <!-- Premium Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏪%3C/text%3E%3C/svg%3E">
     
     <style>
         /* ============================================
-           CSS VARIABLES - DESIGN SYSTEM FOUNDATION
-           Easy theme customization in one place
+           ENTERPRISE CSS ARCHITECTURE
+           Design System Foundation
         ============================================ */
+        
         :root {
-            /* Color Palette - Premium Luxury Theme */
-            --color-primary: #1E40AF;
-            --color-primary-dark: #1E3A8A;
-            --color-primary-light: #3B82F6;
-            --color-secondary: #7C3AED;
+            /* Brand Colors - Dark Luxury Theme */
+            --color-background: #0F0F0F;
+            --color-surface: #111827;
+            --color-surface-light: #1F2937;
+            --color-border: #374151;
+            --color-border-light: #4B5563;
+            
+            /* Accent Colors */
+            --color-primary: #3B82F6;
+            --color-primary-dark: #2563EB;
+            --color-secondary: #8B5CF6;
             --color-accent: #F59E0B;
-            --color-accent-hover: #D97706;
             --color-success: #10B981;
             --color-danger: #EF4444;
             
-            /* Neutral Colors */
-            --color-white: #FFFFFF;
-            --color-bg: #F9FAFB;
-            --color-bg-secondary: #F3F4F6;
-            --color-bg-card: #FFFFFF;
-            --color-text-primary: #1F2937;
-            --color-text-secondary: #6B7280;
-            --color-text-light: #9CA3AF;
-            --color-border: #E5E7EB;
-            --color-border-hover: #D1D5DB;
+            /* Text Colors */
+            --color-text-primary: #FFFFFF;
+            --color-text-secondary: #D1D5DB;
+            --color-text-muted: #9CA3AF;
             
-            /* Spacing System - 8px base unit */
-            --space-xs: 8px;
-            --space-sm: 16px;
-            --space-md: 24px;
-            --space-lg: 32px;
-            --space-xl: 48px;
-            --space-2xl: 64px;
-            --space-3xl: 96px;
-            --space-4xl: 128px;
+            /* Gradients */
+            --gradient-primary: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+            --gradient-accent: linear-gradient(135deg, #F59E0B 0%, #EF4444 100%);
+            --gradient-dark: linear-gradient(180deg, #0F0F0F 0%, #111827 100%);
+            
+            /* Spacing System (8px base) */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 1.5rem;
+            --space-lg: 2rem;
+            --space-xl: 3rem;
+            --space-2xl: 4rem;
+            --space-3xl: 6rem;
+            --space-4xl: 8rem;
             
             /* Typography Scale */
-            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            --font-size-xs: 0.75rem;
-            --font-size-sm: 0.875rem;
-            --font-size-base: 1rem;
-            --font-size-lg: 1.125rem;
-            --font-size-xl: 1.25rem;
-            --font-size-2xl: 1.5rem;
-            --font-size-3xl: 1.875rem;
-            --font-size-4xl: 2.25rem;
-            --font-size-5xl: 3rem;
-            --font-size-6xl: 3.75rem;
+            --font-display: 'Outfit', -apple-system, sans-serif;
+            --font-body: 'Inter', -apple-system, sans-serif;
+            
+            --text-xs: 0.75rem;
+            --text-sm: 0.875rem;
+            --text-base: 1rem;
+            --text-lg: 1.125rem;
+            --text-xl: 1.25rem;
+            --text-2xl: 1.5rem;
+            --text-3xl: 1.875rem;
+            --text-4xl: 2.25rem;
+            --text-5xl: 3rem;
+            --text-6xl: 3.75rem;
+            --text-7xl: 4.5rem;
             
             /* Shadows */
-            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-            --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-            --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
+            --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+            --shadow-glow: 0 0 20px rgba(59, 130, 246, 0.5);
             
             /* Border Radius */
-            --radius-sm: 6px;
-            --radius-md: 8px;
-            --radius-lg: 12px;
-            --radius-xl: 16px;
-            --radius-2xl: 24px;
+            --radius-sm: 0.375rem;
+            --radius-md: 0.5rem;
+            --radius-lg: 0.75rem;
+            --radius-xl: 1rem;
+            --radius-2xl: 1.5rem;
             --radius-full: 9999px;
             
             /* Transitions */
@@ -96,13 +134,24 @@
             
             /* Layout */
             --header-height: 80px;
+            --announcement-height: 48px;
             --container-max: 1400px;
+            
+            /* Z-index Scale */
+            --z-dropdown: 1000;
+            --z-sticky: 1020;
+            --z-fixed: 1030;
+            --z-modal-backdrop: 1040;
+            --z-modal: 1050;
+            --z-popover: 1060;
+            --z-tooltip: 1070;
         }
         
         /* ============================================
            RESET & BASE STYLES
         ============================================ */
-        * {
+        
+        *, *::before, *::after {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -112,15 +161,17 @@
             scroll-behavior: smooth;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
         }
         
         body {
-            font-family: var(--font-family);
-            font-size: var(--font-size-base);
+            font-family: var(--font-body);
+            font-size: var(--text-base);
             line-height: 1.6;
             color: var(--color-text-primary);
-            background-color: var(--color-bg);
+            background: var(--color-background);
             overflow-x: hidden;
+            min-height: 100vh;
         }
         
         img {
@@ -134,33 +185,87 @@
             cursor: pointer;
             border: none;
             outline: none;
+            background: none;
         }
         
         a {
             text-decoration: none;
             color: inherit;
+            cursor: pointer;
         }
         
         /* ============================================
-           HEADER - PREMIUM FIXED NAVIGATION
+           ANNOUNCEMENT BAR (TOP PRIORITY CTA)
         ============================================ */
-        .header {
+        
+        .announcement-bar {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
+            height: var(--announcement-height);
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: var(--z-fixed);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .announcement-content {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+            padding: 0 var(--space-lg);
+            text-align: center;
+        }
+        
+        .announcement-text {
+            font-size: var(--text-sm);
+            font-weight: 600;
+            color: var(--color-text-primary);
+            letter-spacing: 0.05em;
+        }
+        
+        .announcement-cta {
+            padding: 0.5rem 1.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: var(--radius-full);
+            color: var(--color-text-primary);
+            font-weight: 700;
+            font-size: var(--text-xs);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: all var(--transition-base);
+            backdrop-filter: blur(10px);
+        }
+        
+        .announcement-cta:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+        
+        /* ============================================
+           HEADER - PREMIUM NAVIGATION
+        ============================================ */
+        
+        .header {
+            position: fixed;
+            top: var(--announcement-height);
+            left: 0;
+            right: 0;
             height: var(--header-height);
-            background: rgba(255, 255, 255, 0.98);
+            background: rgba(15, 15, 15, 0.95);
             backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--color-border);
-            z-index: 1000;
+            z-index: var(--z-sticky);
             transition: all var(--transition-base);
         }
         
         .header.scrolled {
-            box-shadow: var(--shadow-lg);
-            background: rgba(255, 255, 255, 0.95);
+            box-shadow: var(--shadow-2xl);
+            background: rgba(15, 15, 15, 0.98);
         }
         
         .header-container {
@@ -175,82 +280,123 @@
         }
         
         .logo {
-            font-size: var(--font-size-2xl);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            font-family: var(--font-display);
+            font-size: var(--text-2xl);
             font-weight: 900;
-            letter-spacing: -0.03em;
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            letter-spacing: -0.02em;
+            background: var(--gradient-primary);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             user-select: none;
-            display: flex;
-            align-items: center;
-            gap: var(--space-xs);
         }
         
         .logo-icon {
-            font-size: var(--font-size-3xl);
-            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+            font-size: var(--text-3xl);
+            filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.5));
         }
         
-        .header-nav {
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: var(--space-lg);
+            flex: 1;
+            justify-content: center;
+        }
+        
+        .nav-link {
+            font-size: var(--text-base);
+            font-weight: 600;
+            color: var(--color-text-secondary);
+            padding: var(--space-xs) var(--space-md);
+            border-radius: var(--radius-md);
+            transition: all var(--transition-base);
+            position: relative;
+        }
+        
+        .nav-link:hover {
+            color: var(--color-primary);
+            background: rgba(59, 130, 246, 0.1);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            transform: translateX(-50%) scaleX(0);
+            width: 80%;
+            height: 2px;
+            background: var(--gradient-primary);
+            transition: transform var(--transition-base);
+        }
+        
+        .nav-link:hover::after {
+            transform: translateX(-50%) scaleX(1);
+        }
+        
+        .header-actions {
             display: flex;
             align-items: center;
             gap: var(--space-md);
-            flex: 1;
-            justify-content: flex-end;
         }
         
-        .search-container {
-            position: relative;
-            max-width: 400px;
-            width: 100%;
-        }
-        
-        .search-input {
-            width: 100%;
-            padding: 14px 20px 14px 48px;
-            border: 2px solid var(--color-border);
-            border-radius: var(--radius-full);
-            font-size: var(--font-size-sm);
-            transition: all var(--transition-base);
-            background: var(--color-white);
-            font-weight: 500;
-        }
-        
-        .search-input:focus {
-            border-color: var(--color-primary);
-            box-shadow: 0 0 0 4px rgba(30, 64, 175, 0.1);
-            outline: none;
-        }
-        
-        .search-icon {
-            position: absolute;
-            left: 18px;
-            top: 50%;
-            transform: translateY(-50%);
+        .search-icon,
+        .wishlist-icon,
+        .cart-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--radius-md);
             color: var(--color-text-secondary);
-            pointer-events: none;
+            transition: all var(--transition-base);
+            position: relative;
         }
         
-        /* Main CTA Button - Hero Treatment */
-        .cta-primary {
-            padding: 16px 36px;
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-            color: var(--color-white);
-            font-weight: 700;
-            font-size: var(--font-size-sm);
+        .search-icon:hover,
+        .wishlist-icon:hover,
+        .cart-icon:hover {
+            color: var(--color-primary);
+            background: rgba(59, 130, 246, 0.1);
+        }
+        
+        .cart-badge {
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            min-width: 18px;
+            height: 18px;
+            padding: 0 4px;
+            background: var(--color-danger);
             border-radius: var(--radius-full);
-            transition: all var(--transition-base);
-            box-shadow: var(--shadow-lg);
-            white-space: nowrap;
-            position: relative;
-            overflow: hidden;
+            font-size: var(--text-xs);
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .header-cta {
+            padding: 0.75rem 1.5rem;
+            background: var(--gradient-primary);
+            color: var(--color-text-primary);
+            font-weight: 700;
+            font-size: var(--text-sm);
+            border-radius: var(--radius-full);
             text-transform: uppercase;
             letter-spacing: 0.05em;
+            transition: all var(--transition-base);
+            box-shadow: var(--shadow-glow);
+            position: relative;
+            overflow: hidden;
         }
         
-        .cta-primary::before {
+        .header-cta::before {
             content: '';
             position: absolute;
             top: 0;
@@ -261,31 +407,28 @@
             transition: left 0.5s;
         }
         
-        .cta-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-2xl);
+        .header-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.7);
         }
         
-        .cta-primary:hover::before {
+        .header-cta:hover::before {
             left: 100%;
         }
         
-        .cta-primary:active {
-            transform: translateY(-1px);
-        }
-        
         /* ============================================
-           HERO SECTION - PREMIUM LANDING (ENHANCED)
+           HERO SECTION - IMMERSIVE PARALLAX
         ============================================ */
+        
         .hero {
-            margin-top: var(--header-height);
+            position: relative;
+            margin-top: calc(var(--announcement-height) + var(--header-height));
             min-height: 700px;
             display: flex;
             align-items: center;
             justify-content: center;
-            position: relative;
             overflow: hidden;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: var(--gradient-dark);
             padding: var(--space-4xl) var(--space-lg);
         }
         
@@ -297,9 +440,14 @@
             right: 0;
             bottom: 0;
             background: 
-                radial-gradient(circle at 20% 50%, rgba(255,255,255,0.15) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(255,255,255,0.15) 0%, transparent 50%);
-            animation: heroFloat 20s ease-in-out infinite;
+                radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.15) 0%, transparent 50%);
+            animation: heroGlow 10s ease-in-out infinite;
+        }
+        
+        @keyframes heroGlow {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.1); }
         }
         
         .hero::after {
@@ -308,27 +456,22 @@
             bottom: 0;
             left: 0;
             right: 0;
-            height: 100px;
-            background: linear-gradient(to top, var(--color-bg), transparent);
-        }
-        
-        @keyframes heroFloat {
-            0%, 100% { transform: translateY(0) scale(1); }
-            50% { transform: translateY(-20px) scale(1.05); }
+            height: 120px;
+            background: linear-gradient(to top, var(--color-background), transparent);
         }
         
         .hero-content {
-            max-width: 1000px;
+            max-width: 1100px;
             text-align: center;
             position: relative;
-            z-index: 1;
+            z-index: 10;
             animation: fadeInUp 1s ease-out;
         }
         
         @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(40px);
+                transform: translateY(50px);
             }
             to {
                 opacity: 1;
@@ -337,37 +480,43 @@
         }
         
         .hero-badge {
-            display: inline-block;
-            padding: 8px 20px;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+            padding: 0.5rem 1.25rem;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
             border-radius: var(--radius-full);
-            color: var(--color-white);
-            font-size: var(--font-size-sm);
-            font-weight: 600;
-            margin-bottom: var(--space-lg);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: var(--color-primary);
+            font-size: var(--text-sm);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: var(--space-xl);
+            backdrop-filter: blur(10px);
         }
         
         .hero-title {
-            font-size: var(--font-size-6xl);
+            font-family: var(--font-display);
+            font-size: var(--text-7xl);
             font-weight: 900;
-            color: var(--color-white);
-            margin-bottom: var(--space-lg);
-            letter-spacing: -0.04em;
             line-height: 1.1;
-            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            letter-spacing: -0.03em;
+            margin-bottom: var(--space-lg);
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
         }
         
         .hero-subtitle {
-            font-size: var(--font-size-2xl);
-            color: rgba(255, 255, 255, 0.95);
-            margin-bottom: var(--space-2xl);
+            font-size: var(--text-2xl);
             font-weight: 400;
+            color: var(--color-text-secondary);
             line-height: 1.6;
             max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto var(--space-2xl);
         }
         
         .hero-cta-group {
@@ -377,297 +526,120 @@
             flex-wrap: wrap;
         }
         
-        .hero-cta {
-            padding: 20px 48px;
-            background: var(--color-white);
-            color: var(--color-primary);
+        .hero-cta-primary {
+            padding: 1.25rem 3rem;
+            background: var(--gradient-primary);
+            color: var(--color-text-primary);
             font-weight: 800;
-            font-size: var(--font-size-lg);
+            font-size: var(--text-lg);
             border-radius: var(--radius-full);
-            transition: all var(--transition-base);
-            box-shadow: var(--shadow-2xl);
-            display: inline-block;
             text-transform: uppercase;
             letter-spacing: 0.05em;
+            box-shadow: var(--shadow-glow);
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
         }
         
-        .hero-cta:hover {
-            transform: translateY(-6px) scale(1.05);
-            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.5);
+        .hero-cta-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.6s;
+        }
+        
+        .hero-cta-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 40px rgba(59, 130, 246, 0.8);
+        }
+        
+        .hero-cta-primary:hover::before {
+            left: 100%;
         }
         
         .hero-cta-secondary {
-            padding: 20px 48px;
+            padding: 1.25rem 3rem;
             background: transparent;
-            color: var(--color-white);
+            color: var(--color-text-primary);
             font-weight: 700;
-            font-size: var(--font-size-lg);
+            font-size: var(--text-lg);
+            border: 2px solid var(--color-border-light);
             border-radius: var(--radius-full);
-            transition: all var(--transition-base);
-            border: 2px solid rgba(255, 255, 255, 0.5);
-            display: inline-block;
             text-transform: uppercase;
             letter-spacing: 0.05em;
+            transition: all var(--transition-base);
         }
         
         .hero-cta-secondary:hover {
-            background: rgba(255, 255, 255, 0.2);
-            border-color: var(--color-white);
+            border-color: var(--color-primary);
+            color: var(--color-primary);
+            background: rgba(59, 130, 246, 0.1);
             transform: translateY(-4px);
         }
         
         /* ============================================
-           TRUST INDICATORS SECTION (NEW)
+           SECTION HEADER - REUSABLE COMPONENT
         ============================================ */
-        .trust-section {
-            background: var(--color-white);
-            padding: var(--space-2xl) var(--space-lg);
-            border-bottom: 1px solid var(--color-border);
-        }
         
-        .trust-container {
-            max-width: var(--container-max);
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: var(--space-xl);
-        }
-        
-        .trust-item {
-            text-align: center;
-            padding: var(--space-lg);
-        }
-        
-        .trust-icon {
-            font-size: 48px;
-            margin-bottom: var(--space-md);
-            display: inline-block;
-            animation: float 3s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-        
-        .trust-title {
-            font-size: var(--font-size-xl);
-            font-weight: 700;
-            color: var(--color-text-primary);
-            margin-bottom: var(--space-xs);
-        }
-        
-        .trust-description {
-            font-size: var(--font-size-sm);
-            color: var(--color-text-secondary);
-            line-height: 1.6;
-        }
-        
-        /* ============================================
-           FEATURED CATEGORIES SECTION (NEW)
-        ============================================ */
-        .featured-categories {
+        .section {
             padding: var(--space-4xl) var(--space-lg);
-            background: var(--color-bg-secondary);
+            position: relative;
         }
         
-        .featured-categories-container {
-            max-width: var(--container-max);
-            margin: 0 auto;
-        }
-        
-        .section-header-enhanced {
+        .section-header {
             text-align: center;
             margin-bottom: var(--space-3xl);
         }
         
         .section-label {
-            font-size: var(--font-size-sm);
-            font-weight: 700;
+            display: inline-block;
+            padding: 0.5rem 1.25rem;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: var(--radius-full);
             color: var(--color-primary);
+            font-size: var(--text-sm);
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            margin-bottom: var(--space-sm);
+            margin-bottom: var(--space-md);
         }
         
-        .section-title-enhanced {
-            font-size: var(--font-size-5xl);
+        .section-title {
+            font-family: var(--font-display);
+            font-size: var(--text-5xl);
             font-weight: 900;
-            color: var(--color-text-primary);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
             margin-bottom: var(--space-md);
-            letter-spacing: -0.03em;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         
         .section-description {
-            font-size: var(--font-size-lg);
+            font-size: var(--text-xl);
             color: var(--color-text-secondary);
             max-width: 700px;
             margin: 0 auto;
             line-height: 1.7;
         }
         
-        .categories-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--space-lg);
-        }
-        
-        .category-card {
-            background: var(--color-white);
-            border-radius: var(--radius-xl);
-            padding: var(--space-xl);
-            text-align: center;
-            transition: all var(--transition-base);
-            border: 2px solid transparent;
-            cursor: pointer;
-        }
-        
-        .category-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-2xl);
-            border-color: var(--color-primary);
-        }
-        
-        .category-icon {
-            font-size: 64px;
-            margin-bottom: var(--space-md);
-            display: inline-block;
-        }
-        
-        .category-name {
-            font-size: var(--font-size-2xl);
-            font-weight: 700;
-            color: var(--color-text-primary);
-            margin-bottom: var(--space-sm);
-        }
-        
-        .category-count {
-            font-size: var(--font-size-sm);
-            color: var(--color-text-secondary);
-            font-weight: 600;
-        }
-        
         /* ============================================
-           FILTER BAR - CATEGORY NAVIGATION (ENHANCED)
+           PRODUCT GRID - ADVANCED LAYOUT SYSTEM
         ============================================ */
-        .filter-bar {
-            background: var(--color-white);
-            border-bottom: 1px solid var(--color-border);
-            padding: var(--space-lg) 0;
-            position: sticky;
-            top: var(--header-height);
-            z-index: 999;
-            box-shadow: var(--shadow-sm);
-        }
         
-        .filter-container {
-            max-width: var(--container-max);
-            margin: 0 auto;
-            padding: 0 var(--space-lg);
-            display: flex;
-            gap: var(--space-sm);
-            overflow-x: auto;
-            scrollbar-width: thin;
-            scrollbar-color: var(--color-border) transparent;
-        }
-        
-        .filter-container::-webkit-scrollbar {
-            height: 6px;
-        }
-        
-        .filter-container::-webkit-scrollbar-track {
-            background: transparent;
-        }
-        
-        .filter-container::-webkit-scrollbar-thumb {
-            background: var(--color-border);
-            border-radius: var(--radius-full);
-        }
-        
-        .filter-btn {
-            padding: 12px 28px;
-            background: transparent;
-            color: var(--color-text-secondary);
-            font-weight: 600;
-            font-size: var(--font-size-sm);
-            border-radius: var(--radius-full);
-            transition: all var(--transition-fast);
-            white-space: nowrap;
-            border: 2px solid var(--color-border);
-        }
-        
-        .filter-btn:hover {
-            background: var(--color-bg);
-            color: var(--color-primary);
-            border-color: var(--color-primary);
-        }
-        
-        .filter-btn.active {
-            background: var(--color-primary);
-            color: var(--color-white);
-            border-color: var(--color-primary);
-            box-shadow: var(--shadow-lg);
-        }
-        
-        /* ============================================
-           MAIN CONTENT SECTION (ENHANCED)
-        ============================================ */
-        .main-content {
-            max-width: var(--container-max);
-            margin: 0 auto;
-            padding: var(--space-4xl) var(--space-lg);
-        }
-        
-        .section-header {
-            text-align: center;
-            margin-bottom: var(--space-2xl);
-        }
-        
-        .section-title {
-            font-size: var(--font-size-5xl);
-            font-weight: 900;
-            color: var(--color-text-primary);
-            margin-bottom: var(--space-md);
-            letter-spacing: -0.03em;
-        }
-        
-        .section-subtitle {
-            font-size: var(--font-size-xl);
-            color: var(--color-text-secondary);
-            font-weight: 400;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        
-        /* Product Count Indicator */
-        .product-count {
-            text-align: center;
-            margin-bottom: var(--space-xl);
-            font-size: var(--font-size-base);
-            color: var(--color-text-secondary);
-            font-weight: 600;
-            padding: var(--space-sm) var(--space-lg);
-            background: var(--color-bg-secondary);
-            border-radius: var(--radius-full);
-            display: inline-block;
-            margin-left: 50%;
-            transform: translateX(-50%);
-        }
-        
-        /* ============================================
-           PRODUCT GRID - SCALABLE ARCHITECTURE (ENHANCED)
-        ============================================ */
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: var(--space-xl);
-            margin-bottom: var(--space-3xl);
-        }
-        
-        @media (min-width: 768px) {
-            .product-grid {
-                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            }
+            max-width: var(--container-max);
+            margin: 0 auto;
         }
         
         @media (min-width: 1200px) {
@@ -677,50 +649,50 @@
         }
         
         /* ============================================
-           PRODUCT CARD - LUXURY DESIGN (ENHANCED)
+           PRODUCT CARD - GLASSMORPHISM DESIGN
         ============================================ */
+        
         .product-card {
-            background: var(--color-bg-card);
-            border-radius: var(--radius-xl);
+            background: rgba(31, 41, 55, 0.5);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-2xl);
             overflow: hidden;
             transition: all var(--transition-base);
-            border: 2px solid var(--color-border);
             display: flex;
             flex-direction: column;
-            position: relative;
             height: 100%;
+            position: relative;
         }
         
         .product-card:hover {
             transform: translateY(-12px);
-            box-shadow: var(--shadow-2xl);
-            border-color: var(--color-primary-light);
+            border-color: var(--color-primary);
+            box-shadow: var(--shadow-2xl), 0 0 30px rgba(59, 130, 246, 0.3);
         }
         
-        /* Featured Badge */
-        .product-card.featured::before {
-            content: '⭐ Featured';
+        .product-badge {
             position: absolute;
             top: var(--space-md);
             right: var(--space-md);
-            background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-hover) 100%);
-            color: var(--color-white);
-            padding: 8px 16px;
+            padding: 0.5rem 1rem;
+            background: var(--gradient-accent);
             border-radius: var(--radius-full);
-            font-size: var(--font-size-xs);
-            font-weight: 700;
-            z-index: 10;
-            box-shadow: var(--shadow-lg);
+            color: var(--color-text-primary);
+            font-size: var(--text-xs);
+            font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 0.05em;
+            z-index: 10;
+            box-shadow: var(--shadow-lg);
         }
         
         .product-image-container {
             position: relative;
             width: 100%;
-            padding-top: 100%; /* 1:1 Aspect Ratio */
+            padding-top: 133.33%; /* 3:4 aspect ratio for vertical images */
             overflow: hidden;
-            background: var(--color-bg);
+            background: var(--color-surface);
         }
         
         .product-image {
@@ -734,24 +706,7 @@
         }
         
         .product-card:hover .product-image {
-            transform: scale(1.1) rotate(2deg);
-        }
-        
-        /* Image Loading State */
-        .product-image.loading {
-            background: linear-gradient(
-                90deg,
-                var(--color-bg) 0%,
-                #f0f0f0 50%,
-                var(--color-bg) 100%
-            );
-            background-size: 200% 100%;
-            animation: shimmer 1.5s infinite;
-        }
-        
-        @keyframes shimmer {
-            0% { background-position: -200% 0; }
-            100% { background-position: 200% 0; }
+            transform: scale(1.1);
         }
         
         .product-info {
@@ -759,95 +714,137 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-        }
-        
-        .product-category {
-            font-size: var(--font-size-xs);
-            color: var(--color-primary);
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: var(--space-sm);
+            gap: var(--space-sm);
         }
         
         .product-name {
-            font-size: var(--font-size-xl);
+            font-size: var(--text-lg);
             font-weight: 700;
             color: var(--color-text-primary);
-            margin-bottom: var(--space-md);
             line-height: 1.4;
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
-            flex: 1;
+            margin-bottom: var(--space-sm);
+        }
+        
+        .product-pricing {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-md);
+        }
+        
+        .product-price {
+            font-size: var(--text-2xl);
+            font-weight: 900;
+            color: var(--color-primary);
+        }
+        
+        .product-price-original {
+            font-size: var(--text-lg);
+            color: var(--color-text-muted);
+            text-decoration: line-through;
+        }
+        
+        .product-discount {
+            padding: 0.25rem 0.75rem;
+            background: var(--color-success);
+            border-radius: var(--radius-full);
+            color: var(--color-text-primary);
+            font-size: var(--text-xs);
+            font-weight: 700;
         }
         
         .product-cta {
             width: 100%;
-            padding: 16px 24px;
-            background: var(--color-text-primary);
-            color: var(--color-white);
+            padding: 1rem;
+            background: var(--gradient-primary);
+            color: var(--color-text-primary);
             font-weight: 700;
-            font-size: var(--font-size-base);
+            font-size: var(--text-base);
             border-radius: var(--radius-lg);
-            transition: all var(--transition-base);
             text-align: center;
-            display: block;
             text-transform: uppercase;
             letter-spacing: 0.05em;
+            transition: all var(--transition-base);
+            margin-top: auto;
         }
         
         .product-cta:hover {
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
             transform: translateY(-2px);
-            box-shadow: var(--shadow-xl);
+            box-shadow: var(--shadow-xl), var(--shadow-glow);
         }
         
         /* ============================================
-           TESTIMONIALS SECTION (NEW)
+           STICKY FLOATING CTA BUTTON
         ============================================ */
-        .testimonials-section {
-            background: var(--color-white);
-            padding: var(--space-4xl) var(--space-lg);
-            margin-top: var(--space-4xl);
+        
+        .floating-cta {
+            position: fixed;
+            bottom: var(--space-xl);
+            right: var(--space-xl);
+            padding: 1rem 2rem;
+            background: var(--gradient-primary);
+            color: var(--color-text-primary);
+            font-weight: 800;
+            font-size: var(--text-base);
+            border-radius: var(--radius-full);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            box-shadow: var(--shadow-2xl), var(--shadow-glow);
+            z-index: var(--z-fixed);
+            transition: all var(--transition-base);
+            animation: pulse 2s ease-in-out infinite;
         }
         
-        .testimonials-container {
-            max-width: var(--container-max);
-            margin: 0 auto;
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
         }
+        
+        .floating-cta:hover {
+            transform: scale(1.1) translateY(-4px);
+            box-shadow: 0 0 50px rgba(59, 130, 246, 0.9);
+        }
+        
+        /* ============================================
+           TESTIMONIALS SECTION
+        ============================================ */
         
         .testimonials-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: var(--space-xl);
-            margin-top: var(--space-3xl);
+            max-width: var(--container-max);
+            margin: 0 auto;
         }
         
         .testimonial-card {
-            background: var(--color-bg);
+            background: rgba(31, 41, 55, 0.5);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-2xl);
             padding: var(--space-xl);
-            border-radius: var(--radius-xl);
-            border: 2px solid var(--color-border);
             transition: all var(--transition-base);
         }
         
         .testimonial-card:hover {
             transform: translateY(-8px);
+            border-color: var(--color-primary);
             box-shadow: var(--shadow-xl);
-            border-color: var(--color-primary-light);
         }
         
         .testimonial-stars {
             color: var(--color-accent);
-            font-size: var(--font-size-lg);
+            font-size: var(--text-xl);
             margin-bottom: var(--space-md);
         }
         
         .testimonial-text {
-            font-size: var(--font-size-base);
-            color: var(--color-text-primary);
+            font-size: var(--text-base);
+            color: var(--color-text-secondary);
             line-height: 1.8;
             margin-bottom: var(--space-lg);
             font-style: italic;
@@ -863,39 +860,103 @@
             width: 48px;
             height: 48px;
             border-radius: var(--radius-full);
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            background: var(--gradient-primary);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--color-white);
-            font-weight: 700;
-            font-size: var(--font-size-lg);
+            font-weight: 800;
+            font-size: var(--text-lg);
         }
         
-        .testimonial-author-info h4 {
-            font-size: var(--font-size-base);
+        .testimonial-name {
             font-weight: 700;
             color: var(--color-text-primary);
-            margin-bottom: 2px;
+            margin-bottom: 0.25rem;
         }
         
-        .testimonial-author-info p {
-            font-size: var(--font-size-sm);
-            color: var(--color-text-secondary);
+        .testimonial-role {
+            font-size: var(--text-sm);
+            color: var(--color-text-muted);
         }
         
         /* ============================================
-           NEWSLETTER SECTION (NEW)
+           FAQ SECTION
         ============================================ */
-        .newsletter-section {
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+        
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: rgba(31, 41, 55, 0.5);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+            margin-bottom: var(--space-md);
+            overflow: hidden;
+            transition: all var(--transition-base);
+        }
+        
+        .faq-item:hover {
+            border-color: var(--color-primary);
+        }
+        
+        .faq-question {
+            width: 100%;
+            padding: var(--space-lg);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: var(--text-lg);
+            font-weight: 700;
+            color: var(--color-text-primary);
+            text-align: left;
+            cursor: pointer;
+            transition: all var(--transition-base);
+        }
+        
+        .faq-question:hover {
+            color: var(--color-primary);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--transition-slow);
+        }
+        
+        .faq-answer-content {
+            padding: 0 var(--space-lg) var(--space-lg);
+            font-size: var(--text-base);
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+        
+        .faq-icon {
+            transition: transform var(--transition-base);
+        }
+        
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        
+        /* ============================================
+           NEWSLETTER SECTION
+        ============================================ */
+        
+        .newsletter {
+            background: var(--gradient-primary);
             padding: var(--space-4xl) var(--space-lg);
-            margin-top: var(--space-4xl);
             position: relative;
             overflow: hidden;
         }
         
-        .newsletter-section::before {
+        .newsletter::before {
             content: '';
             position: absolute;
             top: 0;
@@ -904,7 +965,7 @@
             bottom: 0;
             background: 
                 radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 0%, transparent 50%);
+                radial-gradient(circle at 80% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
         }
         
         .newsletter-container {
@@ -912,27 +973,25 @@
             margin: 0 auto;
             text-align: center;
             position: relative;
-            z-index: 1;
+            z-index: 10;
         }
         
         .newsletter-icon {
-            font-size: 64px;
+            font-size: var(--text-6xl);
             margin-bottom: var(--space-lg);
         }
         
         .newsletter-title {
-            font-size: var(--font-size-4xl);
+            font-family: var(--font-display);
+            font-size: var(--text-4xl);
             font-weight: 900;
-            color: var(--color-white);
             margin-bottom: var(--space-md);
-            letter-spacing: -0.02em;
         }
         
         .newsletter-description {
-            font-size: var(--font-size-lg);
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: var(--space-xl);
-            line-height: 1.7;
+            font-size: var(--text-lg);
+            margin-bottom: var(--space-2xl);
+            opacity: 0.95;
         }
         
         .newsletter-form {
@@ -940,18 +999,16 @@
             gap: var(--space-md);
             max-width: 600px;
             margin: 0 auto;
-            flex-wrap: wrap;
         }
         
         .newsletter-input {
             flex: 1;
-            min-width: 250px;
-            padding: 18px 24px;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            border-radius: var(--radius-full);
-            font-size: var(--font-size-base);
+            padding: 1rem 1.5rem;
             background: rgba(255, 255, 255, 0.2);
-            color: var(--color-white);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: var(--radius-full);
+            color: var(--color-text-primary);
+            font-size: var(--text-base);
             backdrop-filter: blur(10px);
             transition: all var(--transition-base);
         }
@@ -963,122 +1020,34 @@
         .newsletter-input:focus {
             outline: none;
             background: rgba(255, 255, 255, 0.3);
-            border-color: var(--color-white);
+            border-color: rgba(255, 255, 255, 0.5);
         }
         
         .newsletter-submit {
-            padding: 18px 40px;
-            background: var(--color-white);
-            color: var(--color-primary);
+            padding: 1rem 2rem;
+            background: var(--color-background);
+            color: var(--color-text-primary);
             font-weight: 700;
-            font-size: var(--font-size-base);
+            font-size: var(--text-base);
             border-radius: var(--radius-full);
-            transition: all var(--transition-base);
-            border: none;
-            cursor: pointer;
             text-transform: uppercase;
             letter-spacing: 0.05em;
+            transition: all var(--transition-base);
         }
         
         .newsletter-submit:hover {
             transform: translateY(-4px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            box-shadow: var(--shadow-2xl);
         }
         
         /* ============================================
-           STATS SECTION (NEW)
+           FOOTER - ENTERPRISE LAYOUT
         ============================================ */
-        .stats-section {
-            background: var(--color-bg-secondary);
-            padding: var(--space-4xl) var(--space-lg);
-        }
         
-        .stats-container {
-            max-width: var(--container-max);
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: var(--space-xl);
-        }
-        
-        .stat-item {
-            text-align: center;
-            padding: var(--space-xl);
-        }
-        
-        .stat-number {
-            font-size: var(--font-size-5xl);
-            font-weight: 900;
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: var(--space-sm);
-            line-height: 1;
-        }
-        
-        .stat-label {
-            font-size: var(--font-size-base);
-            color: var(--color-text-secondary);
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-        
-        /* ============================================
-           EMPTY STATE
-        ============================================ */
-        .empty-state {
-            text-align: center;
-            padding: var(--space-4xl) var(--space-lg);
-            background: var(--color-bg-secondary);
-            border-radius: var(--radius-2xl);
-            margin: var(--space-xl) 0;
-        }
-        
-        .empty-state-icon {
-            font-size: 96px;
-            margin-bottom: var(--space-lg);
-            opacity: 0.4;
-        }
-        
-        .empty-state-title {
-            font-size: var(--font-size-3xl);
-            font-weight: 800;
-            color: var(--color-text-primary);
-            margin-bottom: var(--space-md);
-        }
-        
-        .empty-state-text {
-            font-size: var(--font-size-lg);
-            color: var(--color-text-secondary);
-            margin-bottom: var(--space-xl);
-        }
-        
-        .empty-state-cta {
-            padding: 16px 36px;
-            background: var(--color-primary);
-            color: var(--color-white);
-            font-weight: 700;
-            font-size: var(--font-size-base);
-            border-radius: var(--radius-full);
-            display: inline-block;
-            transition: all var(--transition-base);
-        }
-        
-        .empty-state-cta:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-xl);
-        }
-        
-        /* ============================================
-           FOOTER (ENHANCED)
-        ============================================ */
         .footer {
-            background: var(--color-text-primary);
-            color: rgba(255, 255, 255, 0.8);
+            background: var(--color-surface);
+            border-top: 1px solid var(--color-border);
             padding: var(--space-4xl) var(--space-lg) var(--space-xl);
-            margin-top: var(--space-4xl);
         }
         
         .footer-container {
@@ -1086,25 +1055,28 @@
             margin: 0 auto;
         }
         
-        .footer-content {
+        .footer-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: var(--space-3xl);
             margin-bottom: var(--space-3xl);
             padding-bottom: var(--space-3xl);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid var(--color-border);
         }
         
-        .footer-logo-section h3 {
-            font-size: var(--font-size-3xl);
+        .footer-brand h3 {
+            font-family: var(--font-display);
+            font-size: var(--text-2xl);
             font-weight: 900;
-            color: var(--color-white);
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             margin-bottom: var(--space-md);
         }
         
         .footer-description {
-            font-size: var(--font-size-base);
-            color: rgba(255, 255, 255, 0.7);
+            color: var(--color-text-secondary);
             line-height: 1.7;
             margin-bottom: var(--space-lg);
         }
@@ -1115,30 +1087,31 @@
         }
         
         .social-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: var(--radius-full);
-            background: rgba(255, 255, 255, 0.1);
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius-md);
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--color-white);
-            font-size: var(--font-size-lg);
+            color: var(--color-primary);
+            font-size: var(--text-lg);
             transition: all var(--transition-base);
         }
         
         .social-icon:hover {
-            background: var(--color-primary);
+            background: var(--gradient-primary);
+            color: var(--color-text-primary);
             transform: translateY(-4px);
+            box-shadow: var(--shadow-glow);
         }
         
         .footer-section h4 {
-            font-size: var(--font-size-lg);
+            font-size: var(--text-lg);
             font-weight: 700;
-            color: var(--color-white);
             margin-bottom: var(--space-lg);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
+            color: var(--color-text-primary);
         }
         
         .footer-links {
@@ -1148,14 +1121,13 @@
         }
         
         .footer-link {
-            color: rgba(255, 255, 255, 0.7);
-            font-size: var(--font-size-base);
-            transition: all var(--transition-fast);
+            color: var(--color-text-secondary);
+            transition: all var(--transition-base);
             padding: var(--space-xs) 0;
         }
         
         .footer-link:hover {
-            color: var(--color-white);
+            color: var(--color-primary);
             padding-left: var(--space-sm);
         }
         
@@ -1165,80 +1137,51 @@
         }
         
         .footer-copyright {
-            font-size: var(--font-size-sm);
-            color: rgba(255, 255, 255, 0.6);
+            color: var(--color-text-muted);
+            font-size: var(--text-sm);
         }
         
         /* ============================================
-           MOBILE RESPONSIVE ADJUSTMENTS (ENHANCED)
+           MOBILE RESPONSIVE
         ============================================ */
+        
         @media (max-width: 768px) {
             :root {
-                --header-height: 72px;
-                --font-size-6xl: 2.5rem;
-                --font-size-5xl: 2rem;
-                --font-size-4xl: 1.75rem;
+                --text-7xl: 2.5rem;
+                --text-6xl: 2rem;
+                --text-5xl: 1.75rem;
+                --text-4xl: 1.5rem;
             }
             
-            .header-container {
-                padding: 0 var(--space-md);
+            .announcement-bar {
+                height: auto;
+                padding: var(--space-sm) 0;
             }
             
-            .logo {
-                font-size: var(--font-size-xl);
+            .announcement-content {
+                flex-direction: column;
+                gap: var(--space-sm);
             }
             
-            .logo-icon {
-                font-size: var(--font-size-2xl);
+            .header {
+                top: 0;
             }
             
-            .search-container {
+            .nav-menu {
                 display: none;
             }
             
-            .cta-primary {
-                padding: 12px 24px;
-                font-size: var(--font-size-xs);
-            }
-            
             .hero {
+                margin-top: var(--header-height);
                 min-height: 600px;
                 padding: var(--space-3xl) var(--space-md);
-            }
-            
-            .hero-title {
-                font-size: var(--font-size-4xl);
-            }
-            
-            .hero-subtitle {
-                font-size: var(--font-size-lg);
             }
             
             .hero-cta-group {
                 flex-direction: column;
             }
             
-            .hero-cta,
-            .hero-cta-secondary {
-                width: 100%;
-                padding: 18px 36px;
-                font-size: var(--font-size-base);
-            }
-            
-            .filter-container {
-                padding: 0 var(--space-md);
-            }
-            
-            .main-content {
-                padding: var(--space-2xl) var(--space-md);
-            }
-            
             .product-grid {
-                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-                gap: var(--space-md);
-            }
-            
-            .categories-grid {
                 grid-template-columns: 1fr;
             }
             
@@ -1246,309 +1189,280 @@
                 flex-direction: column;
             }
             
-            .newsletter-input {
-                min-width: 100%;
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr;
-                gap: var(--space-xl);
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .product-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .trust-container {
-                grid-template-columns: 1fr;
-            }
-            
-            .stats-container {
-                grid-template-columns: 1fr;
+            .floating-cta {
+                bottom: var(--space-md);
+                right: var(--space-md);
+                left: var(--space-md);
+                text-align: center;
             }
         }
         
         /* ============================================
-           SCROLL TO TOP BUTTON (ENHANCED)
+           LOADING STATES & ANIMATIONS
         ============================================ */
-        .scroll-top {
-            position: fixed;
-            bottom: var(--space-xl);
-            right: var(--space-xl);
-            width: 56px;
-            height: 56px;
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-            color: var(--color-white);
-            border-radius: var(--radius-full);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: var(--shadow-2xl);
-            opacity: 0;
-            visibility: hidden;
-            transition: all var(--transition-base);
-            z-index: 1000;
-            cursor: pointer;
-        }
         
-        .scroll-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-        
-        .scroll-top:hover {
-            transform: translateY(-6px) scale(1.1);
-            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.4);
-        }
-        
-        /* ============================================
-           LOADING SKELETON
-        ============================================ */
         .skeleton {
             background: linear-gradient(
                 90deg,
-                #f0f0f0 0%,
-                #e0e0e0 50%,
-                #f0f0f0 100%
+                rgba(75, 85, 99, 0.3) 0%,
+                rgba(107, 114, 128, 0.3) 50%,
+                rgba(75, 85, 99, 0.3) 100%
             );
             background-size: 200% 100%;
             animation: shimmer 1.5s infinite;
         }
         
-        /* ============================================
-           UTILITIES
-        ============================================ */
-        .container {
-            max-width: var(--container-max);
-            margin: 0 auto;
-            padding: 0 var(--space-lg);
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
         }
         
-        .text-center {
-            text-align: center;
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
         }
         
-        .text-gradient {
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
 <body>
+    
+    <!-- ============================================
+         ANNOUNCEMENT BAR
+    ============================================ -->
+    <div class="announcement-bar">
+        <div class="announcement-content">
+            <span class="announcement-text">🎉 MASSIVE SALE! Up to 60% OFF on Premium Gadgets</span>
+            <a href="https://s.click.aliexpress.com/e/_c3mFZiFh" class="announcement-cta" target="_blank" rel="noopener noreferrer">
+                Shop Now
+            </a>
+        </div>
+    </div>
+    
     <!-- ============================================
          HEADER NAVIGATION
     ============================================ -->
     <header class="header" id="header">
         <div class="header-container">
-            <div class="logo">
+            <a href="#" class="logo">
                 <span class="logo-icon">🏪</span>
                 <span>The Gadget Hub Store</span>
-            </div>
+            </a>
             
-            <nav class="header-nav">
-                <div class="search-container">
-                    <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="11" cy="11" r="8"/>
-                        <path d="m21 21-4.35-4.35"/>
-                    </svg>
-                    <input 
-                        type="text" 
-                        class="search-input" 
-                        id="searchInput" 
-                        placeholder="Search premium products..."
-                        aria-label="Search products"
-                    >
-                </div>
-                
-                <a 
-                    href="https://s.click.aliexpress.com/e/_c4Byolf5" 
-                    class="cta-primary" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    aria-label="Visit Main Affiliate Hub"
-                >
-                    Main Affiliate Hub
-                </a>
+            <nav class="nav-menu">
+                <a href="#featured" class="nav-link">Featured</a>
+                <a href="#electronics" class="nav-link">Electronics</a>
+                <a href="#fashion" class="nav-link">Fashion</a>
+                <a href="#home" class="nav-link">Home & Kitchen</a>
+                <a href="#toys" class="nav-link">Toys & RC</a>
+                <a href="#outdoor" class="nav-link">Outdoor</a>
             </nav>
+            
+            <div class="header-actions">
+                <button class="search-icon" aria-label="Search">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="10" cy="10" r="7"/>
+                        <path d="M15 15 l4 4"/>
+                    </svg>
+                </button>
+                <button class="wishlist-icon" aria-label="Wishlist">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M10 18.35l-1.45-1.32C3.4 12.36 0 9.28 0 5.5 0 2.42 2.42 0 5.5 0 7.24 0 8.91 0.81 10 2.09 11.09 0.81 12.76 0 14.5 0 17.58 0 20 2.42 20 5.5c0 3.78-3.4 6.86-8.55 11.54L10 18.35z"/>
+                    </svg>
+                </button>
+                <button class="cart-icon" aria-label="Shopping Cart">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="7" cy="18" r="2"/>
+                        <circle cx="17" cy="18" r="2"/>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+                    </svg>
+                    <span class="cart-badge">0</span>
+                </button>
+                <a href="https://s.click.aliexpress.com/e/_c3mFZiFh" class="header-cta" target="_blank" rel="noopener noreferrer">
+                    Explore Deals
+                </a>
+            </div>
         </div>
     </header>
     
     <!-- ============================================
-         HERO SECTION - ENHANCED
+         HERO SECTION
     ============================================ -->
     <section class="hero">
         <div class="hero-content">
-            <div class="hero-badge">✨ Premium Quality Guaranteed</div>
-            <h1 class="hero-title">Discover The Future of Gadgets</h1>
+            <div class="hero-badge">
+                <span>✨</span>
+                <span>Premium Quality Guaranteed</span>
+            </div>
+            <h1 class="hero-title">Discover The Future of Tech & Lifestyle</h1>
             <p class="hero-subtitle">
-                Curated collection of innovative technology and luxury products, handpicked for those who demand excellence in every detail.
+                Explore our curated collection of innovative gadgets, premium electronics, and lifestyle essentials. 
+                Quality you can trust, prices you'll love.
             </p>
             <div class="hero-cta-group">
-                <a href="#products" class="hero-cta">Explore Collection</a>
-                <a href="https://s.click.aliexpress.com/e/_c4Byolf5" class="hero-cta-secondary" target="_blank" rel="noopener noreferrer">Visit Store</a>
+                <a href="#featured" class="hero-cta-primary">Browse Collection</a>
+                <a href="https://s.click.aliexpress.com/e/_c3mFZiFh" class="hero-cta-secondary" target="_blank" rel="noopener noreferrer">
+                    View All Deals
+                </a>
             </div>
         </div>
     </section>
     
     <!-- ============================================
-         TRUST INDICATORS SECTION (NEW)
+         FEATURED DEALS SECTION
     ============================================ -->
-    <section class="trust-section">
-        <div class="trust-container">
-            <div class="trust-item">
-                <div class="trust-icon">🚚</div>
-                <h3 class="trust-title">Fast Shipping</h3>
-                <p class="trust-description">Get your products delivered quickly with our reliable shipping partners worldwide.</p>
-            </div>
-            <div class="trust-item">
-                <div class="trust-icon">🔒</div>
-                <h3 class="trust-title">Secure Payment</h3>
-                <p class="trust-description">Your transactions are protected with industry-leading security protocols.</p>
-            </div>
-            <div class="trust-item">
-                <div class="trust-icon">✅</div>
-                <h3 class="trust-title">Quality Assured</h3>
-                <p class="trust-description">Every product is carefully vetted to meet our high quality standards.</p>
-            </div>
-            <div class="trust-item">
-                <div class="trust-icon">💎</div>
-                <h3 class="trust-title">Premium Selection</h3>
-                <p class="trust-description">Handpicked products from trusted brands and innovative manufacturers.</p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- ============================================
-         FEATURED CATEGORIES SECTION (NEW)
-    ============================================ -->
-    <section class="featured-categories">
-        <div class="featured-categories-container">
-            <div class="section-header-enhanced">
-                <div class="section-label">Shop by Category</div>
-                <h2 class="section-title-enhanced">Explore Our Collections</h2>
-                <p class="section-description">
-                    Browse through our carefully curated categories featuring the latest innovations and timeless classics.
-                </p>
-            </div>
-            <div class="categories-grid" id="categoriesGrid">
-                <!-- Categories will be dynamically rendered here -->
-            </div>
-        </div>
-    </section>
-    
-    <!-- ============================================
-         CATEGORY FILTER BAR
-    ============================================ -->
-    <div class="filter-bar">
-        <div class="filter-container" id="filterContainer">
-            <!-- Dynamically generated category buttons will appear here -->
-        </div>
-    </div>
-    
-    <!-- ============================================
-         MAIN PRODUCT SHOWCASE
-    ============================================ -->
-    <main class="main-content">
-        <div class="section-header" id="products">
-            <h2 class="section-title">Premium Collection</h2>
-            <p class="section-subtitle">Every product carefully selected for quality, innovation, and style</p>
+    <section class="section" id="featured">
+        <div class="section-header">
+            <div class="section-label">🔥 Hot Deals</div>
+            <h2 class="section-title">Featured Products</h2>
+            <p class="section-description">
+                Handpicked premium products with exclusive discounts. Limited time offers!
+            </p>
         </div>
         
-        <div class="product-count" id="productCount">
-            <!-- Product count will be dynamically inserted -->
-        </div>
-        
-        <div class="product-grid" id="productGrid">
+        <div class="product-grid" id="featuredProducts">
             <!-- Products will be dynamically rendered here -->
         </div>
+    </section>
+    
+    <!-- ============================================
+         ELECTRONICS SECTION
+    ============================================ -->
+    <section class="section" id="electronics">
+        <div class="section-header">
+            <div class="section-label">⚡ Electronics</div>
+            <h2 class="section-title">Smart Gadgets & Electronics</h2>
+            <p class="section-description">
+                Cutting-edge technology for your modern lifestyle
+            </p>
+        </div>
         
-        <!-- Empty State (shown when no products match filter/search) -->
-        <div class="empty-state" id="emptyState" style="display: none;">
-            <div class="empty-state-icon">🔍</div>
-            <h3 class="empty-state-title">No products found</h3>
-            <p class="empty-state-text">Try adjusting your search or filter to find what you're looking for.</p>
-            <button class="empty-state-cta" onclick="window.location.reload()">Reset Filters</button>
-        </div>
-    </main>
-    
-    <!-- ============================================
-         STATS SECTION (NEW)
-    ============================================ -->
-    <section class="stats-section">
-        <div class="stats-container">
-            <div class="stat-item">
-                <div class="stat-number" id="statProducts">30+</div>
-                <div class="stat-label">Premium Products</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" id="statCategories">12+</div>
-                <div class="stat-label">Categories</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">10K+</div>
-                <div class="stat-label">Happy Customers</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">99%</div>
-                <div class="stat-label">Satisfaction Rate</div>
-            </div>
+        <div class="product-grid" id="electronicsProducts">
+            <!-- Products will be dynamically rendered here -->
         </div>
     </section>
     
     <!-- ============================================
-         TESTIMONIALS SECTION (NEW)
+         FASHION SECTION
     ============================================ -->
-    <section class="testimonials-section">
-        <div class="testimonials-container">
-            <div class="section-header-enhanced">
-                <div class="section-label">Customer Reviews</div>
-                <h2 class="section-title-enhanced">What Our Customers Say</h2>
-                <p class="section-description">
-                    Join thousands of satisfied customers who trust The Gadget Hub Store for premium products.
+    <section class="section" id="fashion">
+        <div class="section-header">
+            <div class="section-label">👜 Fashion</div>
+            <h2 class="section-title">Fashion & Accessories</h2>
+            <p class="section-description">
+                Elevate your style with premium bags, jewelry, and footwear
+            </p>
+        </div>
+        
+        <div class="product-grid" id="fashionProducts">
+            <!-- Products will be dynamically rendered here -->
+        </div>
+    </section>
+    
+    <!-- ============================================
+         HOME & KITCHEN SECTION
+    ============================================ -->
+    <section class="section" id="home">
+        <div class="section-header">
+            <div class="section-label">🏡 Home</div>
+            <h2 class="section-title">Home & Kitchen Essentials</h2>
+            <p class="section-description">
+                Transform your living space with innovative appliances
+            </p>
+        </div>
+        
+        <div class="product-grid" id="homeProducts">
+            <!-- Products will be dynamically rendered here -->
+        </div>
+    </section>
+    
+    <!-- ============================================
+         TOYS & RC SECTION
+    ============================================ -->
+    <section class="section" id="toys">
+        <div class="section-header">
+            <div class="section-label">🎮 Toys</div>
+            <h2 class="section-title">Toys & RC Collection</h2>
+            <p class="section-description">
+                Entertainment for all ages - from drones to action figures
+            </p>
+        </div>
+        
+        <div class="product-grid" id="toysProducts">
+            <!-- Products will be dynamically rendered here -->
+        </div>
+    </section>
+    
+    <!-- ============================================
+         OUTDOOR SECTION
+    ============================================ -->
+    <section class="section" id="outdoor">
+        <div class="section-header">
+            <div class="section-label">🏕️ Outdoor</div>
+            <h2 class="section-title">Outdoor & Tactical Gear</h2>
+            <p class="section-description">
+                Adventure-ready equipment for outdoor enthusiasts
+            </p>
+        </div>
+        
+        <div class="product-grid" id="outdoorProducts">
+            <!-- Products will be dynamically rendered here -->
+        </div>
+    </section>
+    
+    <!-- ============================================
+         TESTIMONIALS SECTION
+    ============================================ -->
+    <section class="section">
+        <div class="section-header">
+            <div class="section-label">💬 Reviews</div>
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-description">
+                Join thousands of satisfied customers worldwide
+            </p>
+        </div>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">
+                    "Absolutely love my new portable blender! Fast shipping and excellent quality. The Gadget Hub Store is now my go-to for all tech purchases."
                 </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">SM</div>
+                    <div>
+                        <div class="testimonial-name">Sarah Mitchell</div>
+                        <div class="testimonial-role">Fitness Enthusiast</div>
+                    </div>
+                </div>
             </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">
-                        "Absolutely love the quality of products! The crocodile-patterned bag exceeded my expectations. Fast shipping and excellent customer service."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">SM</div>
-                        <div class="testimonial-author-info">
-                            <h4>Sarah Martinez</h4>
-                            <p>Fashion Enthusiast</p>
-                        </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">
+                    "The drone camera quality exceeded my expectations! Perfect for aerial photography. Great customer service and competitive prices."
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">JC</div>
+                    <div>
+                        <div class="testimonial-name">James Chen</div>
+                        <div class="testimonial-role">Photographer</div>
                     </div>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">
-                        "The drone camera quality is outstanding! Perfect for my photography projects. The Gadget Hub Store delivers on their promise of premium quality."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">JD</div>
-                        <div class="testimonial-author-info">
-                            <h4>James Davidson</h4>
-                            <p>Professional Photographer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">
-                        "Great selection of gadgets! Found exactly what I needed. The portable blender is a game-changer for my morning smoothies. Highly recommend!"
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">EL</div>
-                        <div class="testimonial-author-info">
-                            <h4>Emily Chen</h4>
-                            <p>Fitness Coach</p>
-                        </div>
+            </div>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p class="testimonial-text">
+                    "Found the perfect handbag at an unbeatable price! The quality is premium and shipping was super fast. Highly recommended!"
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">EP</div>
+                    <div>
+                        <div class="testimonial-name">Emily Parker</div>
+                        <div class="testimonial-role">Fashion Blogger</div>
                     </div>
                 </div>
             </div>
@@ -1556,14 +1470,77 @@
     </section>
     
     <!-- ============================================
-         NEWSLETTER SECTION (NEW)
+         FAQ SECTION
     ============================================ -->
-    <section class="newsletter-section">
+    <section class="section">
+        <div class="section-header">
+            <div class="section-label">❓ FAQ</div>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-description">
+                Everything you need to know about shopping with us
+            </p>
+        </div>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Do you offer international shipping?</span>
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Yes! We ship worldwide through our trusted partners. Delivery times vary by location, typically 7-21 business days.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What payment methods do you accept?</span>
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        We accept all major credit cards, PayPal, and AliPay for secure transactions.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>What is your return policy?</span>
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        We offer a 30-day return policy on most items. Products must be unused and in original packaging.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">
+                    <span>Are your products authentic?</span>
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Absolutely! All products are sourced from verified manufacturers and come with quality guarantees.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         NEWSLETTER SECTION
+    ============================================ -->
+    <section class="newsletter">
         <div class="newsletter-container">
             <div class="newsletter-icon">📧</div>
-            <h2 class="newsletter-title">Stay Updated with Latest Products</h2>
+            <h2 class="newsletter-title">Stay Updated with Exclusive Deals</h2>
             <p class="newsletter-description">
-                Subscribe to our newsletter and be the first to know about new arrivals, exclusive deals, and premium gadgets.
+                Subscribe to our newsletter and be the first to know about new arrivals, flash sales, and exclusive discounts.
             </p>
             <form class="newsletter-form" id="newsletterForm">
                 <input 
@@ -1573,47 +1550,51 @@
                     required
                     id="newsletterEmail"
                 >
-                <button type="submit" class="newsletter-submit">Subscribe Now</button>
+                <button type="submit" class="newsletter-submit">Subscribe</button>
             </form>
         </div>
     </section>
     
     <!-- ============================================
-         FOOTER - ENHANCED
+         FOOTER
     ============================================ -->
     <footer class="footer">
         <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-logo-section">
+            <div class="footer-grid">
+                <div class="footer-brand">
                     <h3>The Gadget Hub Store</h3>
                     <p class="footer-description">
-                        Your trusted destination for premium gadgets and innovative technology. We curate the best products to enhance your lifestyle.
+                        Your trusted destination for premium gadgets, innovative technology, and lifestyle essentials. 
+                        Quality products at competitive prices with worldwide shipping.
                     </p>
                     <div class="footer-social">
                         <a href="#" class="social-icon" aria-label="Facebook">📘</a>
-                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
                         <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
                         <a href="#" class="social-icon" aria-label="YouTube">📺</a>
                     </div>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4>Shop</h4>
                     <div class="footer-links">
-                        <a href="#products" class="footer-link">Products</a>
-                        <a href="#" class="footer-link">About Us</a>
-                        <a href="#" class="footer-link">Contact</a>
-                        <a href="#" class="footer-link">Blog</a>
+                        <a href="#featured" class="footer-link">Featured Products</a>
+                        <a href="#electronics" class="footer-link">Electronics</a>
+                        <a href="#fashion" class="footer-link">Fashion & Accessories</a>
+                        <a href="#home" class="footer-link">Home & Kitchen</a>
+                        <a href="#toys" class="footer-link">Toys & RC</a>
+                        <a href="#outdoor" class="footer-link">Outdoor Gear</a>
                     </div>
                 </div>
                 
                 <div class="footer-section">
                     <h4>Customer Service</h4>
                     <div class="footer-links">
-                        <a href="https://s.click.aliexpress.com/e/_c4Byolf5" class="footer-link" target="_blank" rel="noopener noreferrer">Main Affiliate Hub</a>
-                        <a href="#" class="footer-link">Shipping Information</a>
+                        <a href="https://s.click.aliexpress.com/e/_c3mFZiFh" class="footer-link" target="_blank" rel="noopener noreferrer">Main Store</a>
+                        <a href="#" class="footer-link">Track Order</a>
+                        <a href="#" class="footer-link">Shipping Info</a>
                         <a href="#" class="footer-link">Returns & Refunds</a>
-                        <a href="#" class="footer-link">FAQ</a>
+                        <a href="#" class="footer-link">Contact Us</a>
                     </div>
                 </div>
                 
@@ -1621,7 +1602,7 @@
                     <h4>Legal</h4>
                     <div class="footer-links">
                         <a href="#" class="footer-link">Privacy Policy</a>
-                        <a href="#" class="footer-link">Terms of Service</a>
+                        <a href="#" class="link">Terms of Service</a>
                         <a href="#" class="footer-link">Cookie Policy</a>
                         <a href="#" class="footer-link">Affiliate Disclosure</a>
                     </div>
@@ -1630,516 +1611,389 @@
             
             <div class="footer-bottom">
                 <p class="footer-copyright">
-                    © 2024 The Gadget Hub Store. All rights reserved. Built with ❤️ for gadget enthusiasts worldwide.
+                    © 2024 The Gadget Hub Store. All rights reserved. Built with ❤️ for tech enthusiasts worldwide.
                 </p>
             </div>
         </div>
     </footer>
     
     <!-- ============================================
-         SCROLL TO TOP BUTTON
+         FLOATING CTA BUTTON
     ============================================ -->
-    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-            <polyline points="18 15 12 9 6 15"/>
-        </svg>
-    </button>
+    <a href="https://s.click.aliexpress.com/e/_c3mFZiFh" class="floating-cta" target="_blank" rel="noopener noreferrer">
+        🛍️ Shop All Deals
+    </a>
     
     <!-- ============================================
-         JAVASCRIPT - SCALABLE ARCHITECTURE WITH FIREBASE INTEGRATION
-         
-         ADDING NEW PRODUCTS:
-         Simply add a new object to the 'products' array below.
-         No HTML or CSS changes needed!
-         
-         Example:
-         {
-             id: 31,
-             name: "Your Product Name",
-             image: "https://your-image-url.jpg",
-             affiliateLink: "https://your-affiliate-link.com",
-             category: "Your Category",
-             featured: false
-         }
+         ENTERPRISE JAVASCRIPT ARCHITECTURE
     ============================================ -->
     <script type="module">
         /* ============================================
-           FIREBASE CONFIGURATION (LIGHTWEIGHT BACKEND)
-           Replace with your Firebase project credentials
+           PRODUCT DATABASE - COMPLETE 30 PRODUCTS
+           Centralized data structure for scalability
         ============================================ */
         
-        // Firebase configuration object
-        const firebaseConfig = {
-            // Optional: Add your Firebase config here for cloud data sync
-            // For now, we'll use localStorage as a lightweight alternative
-            enabled: false // Set to true when Firebase is configured
-        };
-        
-        /* ============================================
-           PRODUCT DATA ARRAY
-           This is the ONLY place you need to edit to add/remove products
-        ============================================ */
-        const products = [
+        const PRODUCTS = [
             {
                 id: 1,
-                name: "2025 Crocodile-Patterned Mom Bag",
-                image: "https://ae01.alicdn.com/kf/S1b6819b1686940a98f1f534888138988K.jpg",
-                affiliateLink: "https://tr.ee/xTR3ID",
-                category: "Fashion Accessories",
+                name: "Foldable Electric Mosquito Swatter 3-in-1 Electric Mosquito Killer Anti-mosquito Lamp Rechargeable Wall-Mounted",
+                price: "PKR 3,822",
+                originalPrice: "PKR 7,644",
+                discount: "-50%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000035182_9x16.png",
+                affiliateLink: "https://tr.ee/ZQArhr",
+                category: "home",
                 featured: true
             },
             {
                 id: 2,
-                name: "Designer Women Leather Handbags",
-                image: "https://ae01.alicdn.com/kf/S555541e217034c5db54483783a483b27E.jpg",
-                affiliateLink: "https://tr.ee/NvrNSe",
-                category: "Fashion Accessories",
+                name: "Portable Fruit Juice Blenders Summer Personal Electric Mini Bottle Home USB 6 Blades Juicer Cup Machine For Kitchen",
+                price: "PKR 3,531",
+                originalPrice: "PKR 7,356",
+                discount: "-52%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000035623_9x16.jpg",
+                affiliateLink: "https://tr.ee/42oUjt",
+                category: "home",
                 featured: true
             },
             {
                 id: 3,
-                name: "ZHBORUINI 2024 Pearl Earrings",
-                image: "https://ae01.alicdn.com/kf/U2e3f5966955047b19356598c19a93ed8g.jpg",
-                affiliateLink: "https://tr.ee/yrO0cx",
-                category: "Jewelry",
-                featured: false
+                name: "4000mAh Leafless Portable Neck Fan Turbine Vaneless Design 3 Gears Super Strong Wind Fast Cooling Digital",
+                price: "PKR 8,776",
+                originalPrice: "PKR 17,552",
+                discount: "-50%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000035631_9x16.jpg",
+                affiliateLink: "https://tr.ee/8gWwUZ",
+                category: "electronics",
+                featured: true
             },
             {
                 id: 4,
-                name: "2026 Silver Wedding Ring",
-                image: "https://ae01.alicdn.com/kf/S26667cf77d0746b1b59c5d1947e4cc95F.jpg",
-                affiliateLink: "https://tr.ee/60ZwWK",
-                category: "Jewelry",
+                name: "Portable Mini Handheld Fan with LED Display Semiconductor Refrigeration 100 Speeds USB Rechargeable",
+                price: "PKR 5,823",
+                originalPrice: "PKR 11,884",
+                discount: "-51%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000035639_9x16.jpg",
+                affiliateLink: "https://tr.ee/ZCTKsh",
+                category: "electronics",
                 featured: false
             },
             {
                 id: 5,
-                name: "4000mAh Portable Neck Fan",
-                image: "https://ae01.alicdn.com/kf/S24f3c7e096414704874b21b06c8b7461K.jpg",
-                affiliateLink: "https://tr.ee/8gWwUZ",
-                category: "Electronics",
-                featured: true
+                name: "2026 New Fashion Silver Color Wedding Ring For Women Men The Galadriel Nenya Windmill Shape Jewelry",
+                price: "PKR 1,176",
+                originalPrice: "PKR 1,223",
+                discount: "-3%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000035899_9x16.jpg",
+                affiliateLink: "https://tr.ee/60ZwWK",
+                category: "fashion",
+                featured: false
             },
             {
                 id: 6,
-                name: "Portable Mini Handheld Fan",
-                image: "https://ae01.alicdn.com/kf/S0f16d557876246479f64c62d0434cc2eU.jpg",
-                affiliateLink: "https://tr.ee/8gWwUZ",
-                category: "Electronics",
-                featured: false
-            },
-            {
-                id: 7,
-                name: "Portable Fruit Juice Blender",
-                image: "https://ae01.alicdn.com/kf/S4d977e235e124806a143896b42b93700E.jpg",
-                affiliateLink: "https://tr.ee/42oUjt",
-                category: "Kitchen Appliances",
-                featured: false
-            },
-            {
-                id: 8,
-                name: "Tactical Foldable Recycling Pouch",
-                image: "https://ae01.alicdn.com/kf/S1b6819b1686940a98f1f534888138988K.jpg",
-                affiliateLink: "https://tr.ee/Pu5WqQ",
-                category: "Outdoor Gear",
-                featured: false
-            },
-            {
-                id: 9,
-                name: "Magnetic Power Bank 15W",
-                image: "https://ae01.alicdn.com/kf/S26667cf77d0746b1b59c5d1947e4cc95F.jpg",
-                affiliateLink: "https://tr.ee/CQd7K2",
-                category: "Electronics",
+                name: "ZHBORUINI 2024 Pearl Earrings Genuine Natural Freshwater Pearl 925 Sterling Silver Earrings For Woman",
+                price: "PKR 1,600",
+                originalPrice: null,
+                discount: null,
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000035908_9x16.jpg",
+                affiliateLink: "https://tr.ee/yrO0cx",
+                category: "fashion",
                 featured: true
             },
             {
+                id: 7,
+                name: "Famous Designer Brand Bags Women Leather Handbags New Luxury Ladies Hand Bags Purse Fashion Shoulder Bags",
+                price: "PKR 2,753",
+                originalPrice: "PKR 5,986",
+                discount: "-54%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000035918_9x16.jpg",
+                affiliateLink: "https://tr.ee/NvrNSe",
+                category: "fashion",
+                featured: true
+            },
+            {
+                id: 8,
+                name: "2025 New Crocodile-Patterned Middle-Aged Mom Bag, Genuine Bamboo Joint Handle Handbag, High-End Single-",
+                price: "PKR 18,619",
+                originalPrice: "PKR 39,614",
+                discount: "-53%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000035930_9x16.jpg",
+                affiliateLink: "https://tr.ee/xTR3ID",
+                category: "fashion",
+                featured: true
+            },
+            {
+                id: 9,
+                name: "Men's Chest Bag Fashion Small Canvas Shoulder Crossbody Bags for Man Mini Cloth Sling Sport Cross Phone Male",
+                price: "PKR 2,048",
+                originalPrice: "PKR 4,179",
+                discount: "-51%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000035951_9x16.jpg",
+                affiliateLink: "https://tr.ee/AEA3e8",
+                category: "fashion",
+                featured: false
+            },
+            {
                 id: 10,
-                name: "Foldable Electric Mosquito Swatter",
-                image: "https://ae01.alicdn.com/kf/S628399e5782747d79b291d9d95713437T.jpg",
-                affiliateLink: "https://tr.ee/ZQArhr",
-                category: "Home & Garden",
+                name: "Embroidery Messenger Bags Women Leather Handbags Bags for Women Sac a Main Ladies hair ball Hand Bag",
+                price: "PKR 2,712",
+                originalPrice: "PKR 5,896",
+                discount: "-54%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000037048_9x16.jpg",
+                affiliateLink: "https://tr.ee/J1OkcI",
+                category: "fashion",
                 featured: false
             },
             {
                 id: 11,
-                name: "Portable Mini Electric Juicer",
-                image: "https://ae01.alicdn.com/kf/S01e403d5267f40889047248197779f61b.jpg",
-                affiliateLink: "https://tr.ee/MzMY6y",
-                category: "Kitchen Appliances",
+                name: "Women's summer high-heeled shoes silver small size sandals Roman shoes elegant small low heels thick and",
+                price: "PKR 4,727",
+                originalPrice: "PKR 10,057",
+                discount: "-53%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000037056_9x16.jpg",
+                affiliateLink: "https://tr.ee/XQvJNf",
+                category: "fashion",
                 featured: false
             },
             {
                 id: 12,
-                name: "Aroma Humidifier Flame Diffuser",
-                image: "https://ae01.alicdn.com/kf/S9196b6d510c74f5195e69e0618035ea6w.jpg",
-                affiliateLink: "https://tr.ee/L1Jo9v",
-                category: "Home & Garden",
+                name: "Women's summer breathable mesh flat shoes women's shoes casual sneakers shoes, clearance free shipping",
+                price: "PKR 5,027",
+                originalPrice: "PKR 10,473",
+                discount: "-52%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000037065_9x16.jpg",
+                affiliateLink: "https://tr.ee/rq72oQ",
+                category: "fashion",
                 featured: false
             },
             {
                 id: 13,
-                name: "Large Dollhouse for Girls",
-                image: "https://ae01.alicdn.com/kf/Sbb6f183794464ea49b91e98c9db57ea67.jpg",
-                affiliateLink: "https://tr.ee/OKglGx",
-                category: "Toys & Hobbies",
+                name: "12 Layers Home Use and Commercial Use 220V Fruit Dehydrator Vegetable Snacks Meat Medicinal Materials",
+                price: "PKR 36,229",
+                originalPrice: "PKR 52,506",
+                discount: "-31%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000037075_9x16.jpg",
+                affiliateLink: "https://tr.ee/Bpodk6",
+                category: "home",
                 featured: false
             },
             {
                 id: 14,
-                name: "1:24 Toyota LAND CRUISER PRADO",
-                image: "https://ae01.alicdn.com/kf/S8f090d80c33e46c7b949f57c527d9285z.jpg",
-                affiliateLink: "https://tr.ee/fUKajA",
-                category: "Toys & Hobbies",
+                name: "2.4G Remote Control Fighter Electric Foam Glider Stunt Tumbling UAV Hovering Helicopter with LED Colorful Ligh",
+                price: "PKR 5,993",
+                originalPrice: "PKR 12,484",
+                discount: "-52%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000037079_9x16.jpg",
+                affiliateLink: "https://tr.ee/htnHh1",
+                category: "toys",
                 featured: false
             },
             {
                 id: 15,
-                name: "SU35 RC Plane 2.4G",
-                image: "https://ae01.alicdn.com/kf/S1b6819b1686940a98f1f534888138988K.jpg",
-                affiliateLink: "https://tr.ee/t8XWfN",
-                category: "Toys & Hobbies",
+                name: "M416 Tactical Outdoor Gel Blasters Full Auto Electric Gel Ball Blaster Purple Black Long Range for Outdoor Games",
+                price: "PKR 19,269",
+                originalPrice: "PKR 39,325",
+                discount: "-50%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000037087_9x16.jpg",
+                affiliateLink: "https://tr.ee/p33w8J",
+                category: "toys",
                 featured: false
             },
             {
                 id: 16,
-                name: "ZWN MN82 RC Pickup",
-                image: "https://ae01.alicdn.com/kf/S1b6819b1686940a98f1f534888138988K.jpg",
-                affiliateLink: "https://tr.ee/ewdjGN",
-                category: "Toys & Hobbies",
-                featured: false
+                name: "New V34 Drone 4k 8K HD Camera Obstacle Avoidance Aerial Photography Brushless Motor Foldable Rc Quadcopter Mi",
+                price: "PKR 12,484",
+                originalPrice: null,
+                discount: null,
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000037095_9x16.jpg",
+                affiliateLink: "https://tr.ee/2n8hpr",
+                category: "electronics",
+                featured: true
             },
             {
                 id: 17,
-                name: "1000W Battery Flash Light",
-                image: "https://ae01.alicdn.com/kf/S1b6819b1686940a98f1f534888138988K.jpg",
-                affiliateLink: "https://tr.ee/NeBczB",
-                category: "Outdoor Gear",
+                name: "MEGIR 2019 New Top Band Watches Men Military Sport Brown Leather Quartz Wrist Watch Luxury Drum",
+                price: "PKR 6,897",
+                originalPrice: null,
+                discount: null,
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000037107_9x16.jpg",
+                affiliateLink: "https://tr.ee/lTPUJ6",
+                category: "fashion",
                 featured: false
             },
             {
                 id: 18,
-                name: "Personalized Flip Up Helmet",
-                image: "https://ae01.alicdn.com/kf/S1b6819b1686940a98f1f534888138988K.jpg",
-                affiliateLink: "https://tr.ee/DpkYl0",
-                category: "Automotive",
+                name: "Gamepad Wireless Gaming Controller Machenike G5 Pro Elite Hall Trigger Joystick Mecha-Tactile Buttons Fo",
+                price: "PKR 14,815",
+                originalPrice: "PKR 30,234",
+                discount: "-51%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000039155_9x16.jpg",
+                affiliateLink: "https://tr.ee/rM6dZv",
+                category: "electronics",
                 featured: false
             },
             {
                 id: 19,
-                name: "Steel Toe Cap Protective Shoes",
-                image: "https://ae01.alicdn.com/kf/S1b6819b1686940a98f1f534888138988K.jpg",
-                affiliateLink: "https://tr.ee/ZBW28P",
-                category: "Footwear",
+                name: "MEGIR 2019 New Top Band Watches Men Military Sport Brown Leather Quartz Wrist Watch Luxury Drum",
+                price: "PKR 6,897",
+                originalPrice: null,
+                discount: null,
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000039163_9x16.jpg",
+                affiliateLink: "https://tr.ee/Dr1Kte",
+                category: "fashion",
                 featured: false
             },
             {
                 id: 20,
-                name: "OP Commander SS38 Action Figure",
-                image: "https://ae01.alicdn.com/kf/S1b6819b1686940a98f1f534888138988K.jpg",
-                affiliateLink: "https://tr.ee/jrNAuv",
-                category: "Toys & Hobbies",
+                name: "1000W Built-in Battery Flash Light Emergency Spotlights 9km 99000000LM Most Powerful Led Flashlights Tactical",
+                price: "PKR 11,097",
+                originalPrice: "PKR 22,647",
+                discount: "-51%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000039171_9x16.jpg",
+                affiliateLink: "https://tr.ee/NeBczB",
+                category: "outdoor",
                 featured: false
             },
             {
                 id: 21,
-                name: "Machenike G5 Pro Elite Controller",
-                image: "https://ae01.alicdn.com/kf/S1b6819b1686940a98f1f534888138988K.jpg",
-                affiliateLink: "https://tr.ee/rM6dZv",
-                category: "Gaming",
+                name: "Personalised Dual Lens Flip Up Helmets Motocross Racing Modular Cascos Para Moto Men Women Fashion Fi",
+                price: "PKR 18,265",
+                originalPrice: "PKR 36,530",
+                discount: "-50%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000039179_9x16.jpg",
+                affiliateLink: "https://tr.ee/DpkYl0",
+                category: "outdoor",
                 featured: false
             },
             {
                 id: 22,
-                name: "MEGIR Military Sport Watch",
-                image: "https://ae01.alicdn.com/kf/S1b6819b1686940a98f1f534888138988K.jpg",
-                affiliateLink: "https://tr.ee/Dr1Kte",
-                category: "Watches",
+                name: "Steel Toe Cap Shoes For Men Protective Shoes Work Boots Puncture Proof Safety Shoes Men Work Shoes Sneakers",
+                price: "PKR 11,089",
+                originalPrice: "PKR 27,723",
+                discount: "-60%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000039188_9x16.jpg",
+                affiliateLink: "https://tr.ee/ZBW28P",
+                category: "fashion",
                 featured: false
             },
             {
                 id: 23,
-                name: "V34 Drone 4k 8k Camera",
-                image: "https://ae01.alicdn.com/kf/S1b6819b1686940a98f1f534888138988K.jpg",
-                affiliateLink: "https://tr.ee/2n8hpr",
-                category: "Electronics",
-                featured: true
+                name: "OP Commander SS38 Transformation Movie Series Action Figure Robot Toys Gifts Deformed Car Model",
+                price: "PKR 3,983",
+                originalPrice: null,
+                discount: null,
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000039195_9x16.jpg",
+                affiliateLink: "https://tr.ee/jrNAuv",
+                category: "toys",
+                featured: false
             },
             {
                 id: 24,
-                name: "M416 Tactical Gel Blaster",
-                image: "https://ae01.alicdn.com/kf/S1b6819b1686940a98f1f534888138988K.jpg",
-                affiliateLink: "https://tr.ee/p33w8J",
-                category: "Toys & Hobbies",
+                name: "Large Dollhouse, Toddler House for Girls - with Dolls, Furniture, Accessories, LED Lights, 4 Stories Princess Dream Villa",
+                price: "PKR 19,190",
+                originalPrice: "PKR 38,381",
+                discount: "-50%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000039224_9x16.jpg",
+                affiliateLink: "https://tr.ee/OKglGx",
+                category: "toys",
                 featured: false
             },
             {
                 id: 25,
-                name: "2.4G Remote Control Fighter",
-                image: "https://ae01.alicdn.com/kf/S1b6819b1686940a98f1f534888138988K.jpg",
-                affiliateLink: "https://tr.ee/htnHh1",
-                category: "Toys & Hobbies",
+                name: "1:24 Toyota LAND CRUISER PRADO Key Control Alloy Car Model Sound and Light Pull Back Children's Toy Collectible",
+                price: "PKR 7,910",
+                originalPrice: "PKR 8,890",
+                discount: "-11%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000039231_9x16.jpg",
+                affiliateLink: "https://tr.ee/fUKajA",
+                category: "toys",
                 featured: false
             },
             {
                 id: 26,
-                name: "12 Layers Food Dehydrator",
-                image: "https://ae01.alicdn.com/kf/S1b6819b1686940a98f1f534888138988K.jpg",
-                affiliateLink: "https://tr.ee/Bpodk6",
-                category: "Kitchen Appliances",
+                name: "SU35 RC Plane FX620 FX820 2.4G Remote Control Flying Model Glider Airplane With LED Lights Aircraft Foam Toys",
+                price: "PKR 7,692",
+                originalPrice: "PKR 15,697",
+                discount: "-51%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000039238_9x16.jpg",
+                affiliateLink: "https://tr.ee/t8XWfN",
+                category: "toys",
                 featured: false
             },
             {
                 id: 27,
-                name: "Women's Breathable Mesh Sneakers",
-                image: "https://ae01.alicdn.com/kf/S1b6819b1686940a98f1f534888138988K.jpg",
-                affiliateLink: "https://tr.ee/rq72oQ",
-                category: "Footwear",
+                name: "ZWN MN82 MN82S LC79 1/12 Full Scale RC Pickup Short Truck 4WD Remote Control Climbing Off-road Car Toys for",
+                price: "PKR 18,444",
+                originalPrice: "PKR 32,358",
+                discount: "-43%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000039246_9x16.jpg",
+                affiliateLink: "https://tr.ee/ewdjGN",
+                category: "toys",
                 featured: false
             },
             {
                 id: 28,
-                name: "Women's Summer High-Heeled Sandals",
-                image: "https://ae01.alicdn.com/kf/S1b6819b1686940a98f1f534888138988K.jpg",
-                affiliateLink: "https://tr.ee/XQvJNf",
-                category: "Footwear",
+                name: "Magnetic Power Bank 15W Wireless Charging & 20W Wired Charging Power Bank with TFT Digital Display for iPhone",
+                price: "PKR 7,644",
+                originalPrice: null,
+                discount: null,
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/vertical_02.jpg",
+                affiliateLink: "https://tr.ee/CQd7K2",
+                category: "electronics",
                 featured: false
             },
             {
                 id: 29,
-                name: "Embroidery Messenger Handbag",
-                image: "https://ae01.alicdn.com/kf/S1b6819b1686940a98f1f534888138988K.jpg",
-                affiliateLink: "https://tr.ee/J1OkcI",
-                category: "Fashion Accessories",
+                name: "Tactical Foldable Recycling Bag Dump Pouch MOLLE Drop Pouch durable Mini Magazine Utility Pouch",
+                price: "PKR 5,417",
+                originalPrice: "PKR 11,285",
+                discount: "-52%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000035199_9x16.png",
+                affiliateLink: "https://tr.ee/Pu5WqQ",
+                category: "outdoor",
                 featured: false
             },
             {
                 id: 30,
-                name: "Men's Chest Bag Crossbody",
-                image: "https://ae01.alicdn.com/kf/S1b6819b1686940a98f1f534888138988K.jpg",
-                affiliateLink: "https://tr.ee/AEA3e8",
-                category: "Fashion Accessories",
+                name: "Portable Mini Electric Juicer USB Charging Smoothie Milkshake Maker Automatic Fresh Squeezer Lemon Kitchen Blender Fruit Cup",
+                price: "PKR 3,692",
+                originalPrice: "PKR 7,784",
+                discount: "-52%",
+                image: "https://raw.githubusercontent.com/the-gadget-hub-store/The-Gadget-Hub-Store/main/1000034944_avif_9x16.png",
+                affiliateLink: "https://tr.ee/MzMY6y",
+                category: "home",
                 featured: false
             }
         ];
         
         /* ============================================
-           CATEGORY ICON MAPPING
-        ============================================ */
-        const categoryIcons = {
-            'Fashion Accessories': '👜',
-            'Jewelry': '💍',
-            'Electronics': '📱',
-            'Kitchen Appliances': '🍳',
-            'Outdoor Gear': '🏕️',
-            'Home & Garden': '🏡',
-            'Toys & Hobbies': '🎮',
-            'Automotive': '🏍️',
-            'Footwear': '👟',
-            'Gaming': '🎯',
-            'Watches': '⌚',
-            'all': '🌟'
-        };
-        
-        /* ============================================
-           DATA MANAGEMENT - LOCALSTORAGE INTEGRATION
-        ============================================ */
-        class DataManager {
-            constructor() {
-                this.storageKey = 'gadgetHubStore_data';
-                this.analyticsKey = 'gadgetHubStore_analytics';
-            }
-            
-            // Save products to localStorage
-            saveProducts(products) {
-                try {
-                    localStorage.setItem(this.storageKey, JSON.stringify(products));
-                    return true;
-                } catch (error) {
-                    console.error('Error saving products:', error);
-                    return false;
-                }
-            }
-            
-            // Load products from localStorage
-            loadProducts() {
-                try {
-                    const stored = localStorage.getItem(this.storageKey);
-                    return stored ? JSON.parse(stored) : null;
-                } catch (error) {
-                    console.error('Error loading products:', error);
-                    return null;
-                }
-            }
-            
-            // Track product click
-            trackProductClick(productId) {
-                try {
-                    const analytics = this.getAnalytics();
-                    analytics.productClicks = analytics.productClicks || {};
-                    analytics.productClicks[productId] = (analytics.productClicks[productId] || 0) + 1;
-                    analytics.totalClicks = (analytics.totalClicks || 0) + 1;
-                    localStorage.setItem(this.analyticsKey, JSON.stringify(analytics));
-                } catch (error) {
-                    console.error('Error tracking click:', error);
-                }
-            }
-            
-            // Get analytics data
-            getAnalytics() {
-                try {
-                    const stored = localStorage.getItem(this.analyticsKey);
-                    return stored ? JSON.parse(stored) : {};
-                } catch (error) {
-                    console.error('Error getting analytics:', error);
-                    return {};
-                }
-            }
-            
-            // Save newsletter subscription
-            saveNewsletterSubscription(email) {
-                try {
-                    const subscriptions = this.getNewsletterSubscriptions();
-                    if (!subscriptions.includes(email)) {
-                        subscriptions.push(email);
-                        localStorage.setItem('gadgetHubStore_newsletter', JSON.stringify(subscriptions));
-                        return true;
-                    }
-                    return false;
-                } catch (error) {
-                    console.error('Error saving subscription:', error);
-                    return false;
-                }
-            }
-            
-            // Get newsletter subscriptions
-            getNewsletterSubscriptions() {
-                try {
-                    const stored = localStorage.getItem('gadgetHubStore_newsletter');
-                    return stored ? JSON.parse(stored) : [];
-                } catch (error) {
-                    console.error('Error getting subscriptions:', error);
-                    return [];
-                }
-            }
-        }
-        
-        const dataManager = new DataManager();
-        
-        /* ============================================
-           APPLICATION STATE MANAGEMENT
-        ============================================ */
-        let currentFilter = 'all';
-        let currentSearchTerm = '';
-        
-        /* ============================================
-           UTILITY FUNCTIONS
+           PRODUCT RENDERING ENGINE
         ============================================ */
         
-        /**
-         * Extract unique categories from products array
-         * @returns {Array} Array of unique category names
-         */
-        function getUniqueCategories() {
-            const categories = products.map(product => product.category);
-            return ['all', ...new Set(categories)];
-        }
-        
-        /**
-         * Get category count
-         * @param {String} category - Category name
-         * @returns {Number} Number of products in category
-         */
-        function getCategoryCount(category) {
-            if (category === 'all') return products.length;
-            return products.filter(p => p.category === category).length;
-        }
-        
-        /**
-         * Filter products based on current filter and search term
-         * @returns {Array} Filtered products array
-         */
-        function getFilteredProducts() {
-            return products.filter(product => {
-                const matchesCategory = currentFilter === 'all' || product.category === currentFilter;
-                const matchesSearch = product.name.toLowerCase().includes(currentSearchTerm.toLowerCase()) ||
-                                     product.category.toLowerCase().includes(currentSearchTerm.toLowerCase());
-                return matchesCategory && matchesSearch;
-            });
-        }
-        
-        /* ============================================
-           RENDERING FUNCTIONS
-        ============================================ */
-        
-        /**
-         * Render featured categories section
-         */
-        function renderFeaturedCategories() {
-            const categoriesGrid = document.getElementById('categoriesGrid');
-            const categories = getUniqueCategories().filter(cat => cat !== 'all');
-            
-            // Limit to top 6 categories for featured section
-            const featuredCategories = categories.slice(0, 6);
-            
-            categoriesGrid.innerHTML = featuredCategories.map(category => `
-                <div class="category-card" data-category="${category}" onclick="filterByCategory('${category}')">
-                    <div class="category-icon">${categoryIcons[category] || '📦'}</div>
-                    <h3 class="category-name">${category}</h3>
-                    <p class="category-count">${getCategoryCount(category)} Products</p>
-                </div>
-            `).join('');
-        }
-        
-        /**
-         * Render category filter buttons
-         */
-        function renderFilters() {
-            const filterContainer = document.getElementById('filterContainer');
-            const categories = getUniqueCategories();
-            
-            filterContainer.innerHTML = categories.map(category => `
-                <button 
-                    class="filter-btn ${category === currentFilter ? 'active' : ''}"
-                    data-category="${category}"
-                    aria-label="Filter by ${category}"
-                >
-                    ${categoryIcons[category] || '📦'} ${category === 'all' ? 'All Products' : category}
-                </button>
-            `).join('');
-            
-            // Add click event listeners
-            filterContainer.querySelectorAll('.filter-btn').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    currentFilter = btn.dataset.category;
-                    renderFilters();
-                    renderProducts();
-                    
-                    // Smooth scroll to products
-                    document.getElementById('products').scrollIntoView({ behavior: 'smooth', block: 'start' });
-                });
-            });
-        }
-        
-        /**
-         * Create HTML for a single product card
-         * @param {Object} product - Product object
-         * @returns {String} HTML string
-         */
         function createProductCard(product) {
+            const discountBadge = product.discount ? `<div class="product-badge">${product.discount} OFF</div>` : '';
+            const originalPrice = product.originalPrice ? `<span class="product-price-original">${product.originalPrice}</span>` : '';
+            const discount = product.discount ? `<span class="product-discount">${product.discount}</span>` : '';
+            
             return `
-                <article class="product-card ${product.featured ? 'featured' : ''}" data-product-id="${product.id}">
+                <article class="product-card fade-in" data-product-id="${product.id}">
+                    ${discountBadge}
                     <div class="product-image-container">
                         <img 
                             src="${product.image}" 
                             alt="${product.name}"
                             class="product-image"
                             loading="lazy"
-                            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22400%22 height=%22400%22/%3E%3Ctext fill=%22%23999%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2220%22%3EImage Unavailable%3C/text%3E%3C/svg%3E'"
+                            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22533%22%3E%3Crect fill=%22%231F2937%22 width=%22400%22 height=%22533%22/%3E%3Ctext fill=%22%239CA3AF%22 x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2218%22%3EImage Unavailable%3C/text%3E%3C/svg%3E'"
                         >
                     </div>
                     <div class="product-info">
-                        <div class="product-category">${categoryIcons[product.category] || '📦'} ${product.category}</div>
                         <h3 class="product-name">${product.name}</h3>
+                        <div class="product-pricing">
+                            <span class="product-price">${product.price}</span>
+                            ${originalPrice}
+                            ${discount}
+                        </div>
                         <a 
                             href="${product.affiliateLink}" 
                             class="product-cta"
@@ -2155,181 +2009,107 @@
             `;
         }
         
-        /**
-         * Render product grid
-         */
         function renderProducts() {
-            const productGrid = document.getElementById('productGrid');
-            const emptyState = document.getElementById('emptyState');
-            const productCount = document.getElementById('productCount');
+            // Featured Products
+            const featuredProducts = PRODUCTS.filter(p => p.featured);
+            document.getElementById('featuredProducts').innerHTML = featuredProducts.map(createProductCard).join('');
             
-            const filteredProducts = getFilteredProducts();
+            // Electronics
+            const electronicsProducts = PRODUCTS.filter(p => p.category === 'electronics');
+            document.getElementById('electronicsProducts').innerHTML = electronicsProducts.map(createProductCard).join('');
             
-            if (filteredProducts.length === 0) {
-                productGrid.style.display = 'none';
-                emptyState.style.display = 'block';
-                productCount.textContent = 'No products found';
-            } else {
-                productGrid.style.display = 'grid';
-                emptyState.style.display = 'none';
-                
-                // Update product count
-                const countText = currentFilter === 'all' && !currentSearchTerm 
-                    ? `Showing all ${filteredProducts.length} premium products`
-                    : `Showing ${filteredProducts.length} of ${products.length} products`;
-                productCount.textContent = countText;
-                
-                // Render product cards
-                productGrid.innerHTML = filteredProducts.map(createProductCard).join('');
-                
-                // Add entrance animation
-                const cards = productGrid.querySelectorAll('.product-card');
-                cards.forEach((card, index) => {
-                    card.style.opacity = '0';
-                    card.style.transform = 'translateY(30px)';
-                    setTimeout(() => {
-                        card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                        card.style.opacity = '1';
-                        card.style.transform = 'translateY(0)';
-                    }, index * 50);
-                });
-            }
+            // Fashion
+            const fashionProducts = PRODUCTS.filter(p => p.category === 'fashion');
+            document.getElementById('fashionProducts').innerHTML = fashionProducts.map(createProductCard).join('');
             
-            // Update stats
-            updateStats();
-        }
-        
-        /**
-         * Update statistics section
-         */
-        function updateStats() {
-            document.getElementById('statProducts').textContent = products.length + '+';
-            document.getElementById('statCategories').textContent = getUniqueCategories().length - 1 + '+';
+            // Home
+            const homeProducts = PRODUCTS.filter(p => p.category === 'home');
+            document.getElementById('homeProducts').innerHTML = homeProducts.map(createProductCard).join('');
+            
+            // Toys
+            const toysProducts = PRODUCTS.filter(p => p.category === 'toys');
+            document.getElementById('toysProducts').innerHTML = toysProducts.map(createProductCard).join('');
+            
+            // Outdoor
+            const outdoorProducts = PRODUCTS.filter(p => p.category === 'outdoor');
+            document.getElementById('outdoorProducts').innerHTML = outdoorProducts.map(createProductCard).join('');
         }
         
         /* ============================================
-           EVENT HANDLERS
+           ANALYTICS TRACKING
         ============================================ */
         
-        /**
-         * Handle search input with debouncing
-         */
-        let searchTimeout;
-        function handleSearch(event) {
-            clearTimeout(searchTimeout);
-            searchTimeout = setTimeout(() => {
-                currentSearchTerm = event.target.value;
-                renderProducts();
-            }, 300); // 300ms debounce
-        }
+        window.trackProductClick = function(productId) {
+            const product = PRODUCTS.find(p => p.id === productId);
+            if (product) {
+                console.log(`📊 Product Clicked: ${product.name}`);
+                // Add analytics tracking here (Google Analytics, Facebook Pixel, etc.)
+            }
+        };
         
-        /**
-         * Handle scroll events for header shadow and scroll-to-top button
-         */
-        function handleScroll() {
-            const header = document.getElementById('header');
-            const scrollTop = document.getElementById('scrollTop');
+        /* ============================================
+           FAQ TOGGLE FUNCTIONALITY
+        ============================================ */
+        
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all FAQs
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Open clicked FAQ if it wasn't active
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+        
+        /* ============================================
+           NEWSLETTER FORM HANDLER
+        ============================================ */
+        
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('newsletterEmail').value;
             
-            if (window.scrollY > 50) {
+            if (email) {
+                alert(`🎉 Thank you for subscribing! Check ${email} for exclusive deals.`);
+                document.getElementById('newsletterEmail').value = '';
+            }
+        });
+        
+        /* ============================================
+           SCROLL EFFECTS
+        ============================================ */
+        
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            const currentScroll = window.pageY || document.documentElement.scrollTop;
+            
+            if (currentScroll > 100) {
                 header.classList.add('scrolled');
             } else {
                 header.classList.remove('scrolled');
             }
             
-            if (window.scrollY > 500) {
-                scrollTop.classList.add('visible');
-            } else {
-                scrollTop.classList.remove('visible');
-            }
-        }
-        
-        /**
-         * Scroll to top smoothly
-         */
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-        
-        /**
-         * Filter by category (called from category cards)
-         */
-        window.filterByCategory = function(category) {
-            currentFilter = category;
-            renderFilters();
-            renderProducts();
-            document.getElementById('products').scrollIntoView({ behavior: 'smooth', block: 'start' });
-        };
-        
-        /**
-         * Track product click (called from product CTA)
-         */
-        window.trackProductClick = function(productId) {
-            dataManager.trackProductClick(productId);
-            console.log(`Product ${productId} clicked`);
-        };
-        
-        /**
-         * Handle newsletter form submission
-         */
-        function handleNewsletterSubmit(event) {
-            event.preventDefault();
-            const emailInput = document.getElementById('newsletterEmail');
-            const email = emailInput.value.trim();
-            
-            if (email) {
-                const saved = dataManager.saveNewsletterSubscription(email);
-                if (saved) {
-                    alert('🎉 Thank you for subscribing! You\'ll receive updates about our latest products.');
-                    emailInput.value = '';
-                } else {
-                    alert('✅ You\'re already subscribed to our newsletter!');
-                }
-            }
-        }
+            lastScroll = currentScroll;
+        });
         
         /* ============================================
            INITIALIZATION
         ============================================ */
         
-        /**
-         * Initialize the application
-         */
         function init() {
-            // Save products to localStorage (serverless backend simulation)
-            dataManager.saveProducts(products);
-            
-            // Render initial state
-            renderFeaturedCategories();
-            renderFilters();
             renderProducts();
-            
-            // Set up event listeners
-            const searchInput = document.getElementById('searchInput');
-            searchInput.addEventListener('input', handleSearch);
-            
-            window.addEventListener('scroll', handleScroll);
-            
-            const scrollTopBtn = document.getElementById('scrollTop');
-            scrollTopBtn.addEventListener('click', scrollToTop);
-            
-            const newsletterForm = document.getElementById('newsletterForm');
-            newsletterForm.addEventListener('submit', handleNewsletterSubmit);
-            
-            // Log initialization for debugging
-            console.log(`✅ The Gadget Hub Store initialized successfully`);
-            console.log(`📦 Products loaded: ${products.length}`);
-            console.log(`🏷️ Categories: ${getUniqueCategories().join(', ')}`);
-            console.log(`📊 Analytics tracking: Enabled`);
-            console.log(`💾 Data storage: LocalStorage (serverless)`);
-            
-            // Display analytics if available
-            const analytics = dataManager.getAnalytics();
-            if (analytics.totalClicks) {
-                console.log(`📈 Total product clicks: ${analytics.totalClicks}`);
-            }
+            console.log('✅ The Gadget Hub Store - Enterprise Edition Initialized');
+            console.log(`📦 Total Products: ${PRODUCTS.length}`);
+            console.log(`⭐ Featured Products: ${PRODUCTS.filter(p => p.featured).length}`);
+            console.log(`🎯 Categories: Electronics, Fashion, Home, Toys, Outdoor`);
         }
         
         // Initialize when DOM is ready
@@ -2340,85 +2120,32 @@
         }
         
         /* ============================================
-           DEVELOPER UTILITIES - ENHANCED
-           Exposed for easy debugging and testing
+           GLOBAL API FOR EXTENSIBILITY
         ============================================ */
         
         window.GadgetHubStore = {
-            // Data
-            products,
-            dataManager,
-            
-            // State
-            getCurrentFilter: () => currentFilter,
-            getCurrentSearch: () => currentSearchTerm,
-            
-            // Methods
-            getFilteredProducts,
-            renderProducts,
-            renderFilters,
-            renderFeaturedCategories,
-            
-            // Product Management
+            products: PRODUCTS,
             addProduct: (product) => {
-                products.push({
-                    id: products.length + 1,
-                    ...product
-                });
-                dataManager.saveProducts(products);
-                renderFeaturedCategories();
-                renderFilters();
+                PRODUCTS.push({ ...product, id: PRODUCTS.length + 1 });
                 renderProducts();
-                console.log(`✅ Product added: ${product.name}`);
+                console.log(`✅ Product Added: ${product.name}`);
             },
-            
-            removeProduct: (id) => {
-                const index = products.findIndex(p => p.id === id);
-                if (index > -1) {
-                    const removed = products.splice(index, 1)[0];
-                    dataManager.saveProducts(products);
-                    renderFeaturedCategories();
-                    renderFilters();
-                    renderProducts();
-                    console.log(`❌ Product removed: ${removed.name}`);
-                }
-            },
-            
-            // Analytics
-            getAnalytics: () => dataManager.getAnalytics(),
-            
-            getNewsletterSubscribers: () => dataManager.getNewsletterSubscriptions(),
-            
-            // Statistics
+            getProductsByCategory: (category) => PRODUCTS.filter(p => p.category === category),
+            getFeaturedProducts: () => PRODUCTS.filter(p => p.featured),
             stats: () => ({
-                totalProducts: products.length,
-                categories: getUniqueCategories(),
-                featuredCount: products.filter(p => p.featured).length,
-                categoryCounts: getUniqueCategories().reduce((acc, cat) => {
-                    acc[cat] = getCategoryCount(cat);
-                    return acc;
-                }, {}),
-                analytics: dataManager.getAnalytics()
-            }),
-            
-            // Utilities
-            clearAnalytics: () => {
-                localStorage.removeItem('gadgetHubStore_analytics');
-                console.log('📊 Analytics cleared');
-            },
-            
-            exportData: () => {
-                return {
-                    products: products,
-                    analytics: dataManager.getAnalytics(),
-                    newsletter: dataManager.getNewsletterSubscriptions(),
-                    timestamp: new Date().toISOString()
-                };
-            }
+                total: PRODUCTS.length,
+                featured: PRODUCTS.filter(p => p.featured).length,
+                categories: {
+                    electronics: PRODUCTS.filter(p => p.category === 'electronics').length,
+                    fashion: PRODUCTS.filter(p => p.category === 'fashion').length,
+                    home: PRODUCTS.filter(p => p.category === 'home').length,
+                    toys: PRODUCTS.filter(p => p.category === 'toys').length,
+                    outdoor: PRODUCTS.filter(p => p.category === 'outdoor').length
+                }
+            })
         };
         
-        console.log('🎯 Developer utilities available at: window.GadgetHubStore');
-        console.log('📘 Try: GadgetHubStore.stats()');
+        console.log('🎯 Access store API: window.GadgetHubStore');
     </script>
 </body>
 </html>
