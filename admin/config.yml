@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: ""
-public_folder: ""
+media_folder: "images"
+public_folder: "/images"
 
 collections:
   - name: "products"
@@ -15,4 +15,3 @@ collections:
       - { label: "Product Name", name: "title", widget: "string" }
       - { label: "Product Image", name: "image", widget: "image" }
       - { label: "Affiliate Link", name: "link", widget: "string" }
-      
